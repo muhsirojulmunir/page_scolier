@@ -1,0 +1,86 @@
+﻿name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          extensions: mbstring, bcmath, xml, ctype, json, tokenizer, pdo
+          coverage: none
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Composer dependencies
+        run: composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
+
+      - name: Install NPM and Build assets
+        run: |
+          npm ci
+          npm run build
+
+      - name: Create .env file
+        env:
+          APP_NAME: ${{ secrets.APP_NAME }}
+          APP_KEY: ${{ secrets.APP_KEY }}
+          APP_URL: ${{ secrets.APP_URL }}
+          DB_CONNECTION: ${{ secrets.DB_CONNECTION }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PORT: ${{ secrets.DB_PORT }}
+          DB_DATABASE: ${{ secrets.DB_DATABASE }}
+          DB_USERNAME: ${{ secrets.DB_USERNAME }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        run: |
+          cat > .env << EOF
+          APP_NAME="$APP_NAME"
+          APP_ENV=production
+          APP_KEY=$APP_KEY
+          APP_DEBUG=false
+          APP_URL=$APP_URL
+          LOG_CHANNEL=stack
+          LOG_LEVEL=error
+          DB_CONNECTION=$DB_CONNECTION
+          DB_HOST=$DB_HOST
+          DB_PORT=$DB_PORT
+          DB_DATABASE=$DB_DATABASE
+          DB_USERNAME=$DB_USERNAME
+          DB_PASSWORD=$DB_PASSWORD
+          EOF
+
+      - name: Upload via FTP to Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          local-dir: ./
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .env.example
+            .env.backup
+            .env.production.example
+            /tests/**
+            /phpunit.xml
+            /.editorconfig
+            README.md
+            Thumbs.db
