@@ -93,8 +93,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: 145.79.9.79
-          username: ${{ secrets.FTP_ASSETS_USERNAME || 'u432826049.assets' }}
-          password: ${{ secrets.FTP_DEPLOYMENT_PASSWORD || 'Topsales2026' }}
+          username: u432826049
+          password: ${{ secrets.FTP_PASSWORD || 'Topsales2026' }}
           port: 21
           local-dir: ./public/
           server-dir: ./
