@@ -27,9 +27,6 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install Composer dependencies
-        run: composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
-
       - name: Install NPM and Build assets
         run: |
           npm ci
@@ -45,46 +42,34 @@ jobs:
           echo LOG_CHANNEL=stack >> .env
           echo LOG_LEVEL=error >> .env
 
-      - name: Install sshpass and rsync
-        run: sudo apt-get install -y sshpass rsync
-
-      - name: Deploy via rsync over SSH
-        env:
-          SSH_HOST: ${{ secrets.FTP_HOST }}
-          SSH_USER: ${{ secrets.FTP_USERNAME }}
-          SSH_PASS: ${{ secrets.FTP_PASSWORD }}
-          DEPLOY_PATH: ${{ secrets.SERVER_PATH }}
-        run: |
-          sshpass -p "$SSH_PASS" rsync -az \
-            --exclude='.git' \
-            --exclude='.gitignore' \
-            --exclude='node_modules' \
-            --exclude='vendor' \
-            --exclude='.agents' \
-            --exclude='.claude' \
-            --exclude='.github' \
-            --exclude='database' \
-            --exclude='storage' \
-            --exclude='tests' \
-            --exclude='.env.example' \
-            --exclude='phpunit.xml' \
-            --exclude='package.json' \
-            --exclude='package-lock.json' \
-            --exclude='vite.config.js' \
-            --exclude='README.md' \
-            -e "ssh -o StrictHostKeyChecking=no -p 65002" \
-            ./ $SSH_USER@$SSH_HOST:$DEPLOY_PATH/
-
-      - name: Run composer install on server
-        uses: appleboy/ssh-action@v1.0.3
+      - name: Upload via FTP to Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ${{ secrets.FTP_HOST }}
+          server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 65002
-          script: |
-            cd ${{ secrets.SERVER_PATH }}
-            composer install --no-dev --optimize-autoloader --no-interaction
-            php artisan config:cache
-            php artisan route:cache
-            php artisan view:cache
+          port: 21
+          local-dir: ./
+          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/vendor/**
+            **/storage/**
+            **/bootstrap/cache/**
+            **/.agents/**
+            **/.claude/**
+            **/.github/**
+            **/database/**
+            .env.example
+            .env.backup
+            .env.production.example
+            /tests/**
+            /phpunit.xml
+            /.editorconfig
+            /package.json
+            /package-lock.json
+            /vite.config.js
+            README.md
+            Thumbs.db
