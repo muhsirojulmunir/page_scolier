@@ -45,12 +45,12 @@ jobs:
       - name: Upload via FTP to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
+          server: ${{ secrets.FTP_HOST || '145.79.9.79' }}
+          username: ${{ secrets.FTP_USERNAME || 'u432826049' }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          server-dir: ${{ secrets.FTP_SERVER_DIR || '/public_html/' }}
           exclude: |
             **/.git*
             **/.git*/**
