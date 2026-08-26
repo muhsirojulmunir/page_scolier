@@ -45,45 +45,21 @@ jobs:
           echo LOG_CHANNEL=stack >> .env
           echo LOG_LEVEL=error >> .env
 
-      - name: Upload via FTP to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Deploy files via SCP (SSH)
+        uses: appleboy/scp-action@v0.1.7
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
-          protocol: ftps
-          security: loose
-          local-dir: ./
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/vendor/**
-            **/storage/**
-            **/bootstrap/cache/**
-            **/.agents/**
-            **/.claude/**
-            **/.github/**
-            **/database/**
-            .env.example
-            .env.backup
-            .env.production.example
-            /tests/**
-            /phpunit.xml
-            /.editorconfig
-            /package.json
-            /package-lock.json
-            /vite.config.js
-            README.md
-            Thumbs.db
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: 22
+          source: "app/,bootstrap/,config/,lang/,public/,resources/,routes/,composer.json,composer.lock,artisan,.env"
+          target: ${{ secrets.SERVER_PATH }}
 
-      - name: Run composer install on server via SSH
+      - name: Run composer install and optimize on server
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: 22
           script: |
