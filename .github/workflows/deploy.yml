@@ -36,18 +36,14 @@ jobs:
           npm run build
 
       - name: Create .env file
-        env:
-          APP_KEY: ${{ secrets.APP_KEY }}
-          APP_URL: ${{ secrets.APP_URL }}
         run: |
-          printf 'APP_NAME="Scolier"
-APP_ENV=production
-APP_KEY=%s
-APP_DEBUG=false
-APP_URL=%s
-LOG_CHANNEL=stack
-LOG_LEVEL=error
-' "$APP_KEY" "$APP_URL" > .env
+          echo APP_NAME=Scolier > .env
+          echo APP_ENV=production >> .env
+          echo APP_KEY=${{ secrets.APP_KEY }} >> .env
+          echo APP_DEBUG=false >> .env
+          echo APP_URL=${{ secrets.APP_URL }} >> .env
+          echo LOG_CHANNEL=stack >> .env
+          echo LOG_LEVEL=error >> .env
 
       - name: Upload via FTP to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -56,7 +52,7 @@ LOG_LEVEL=error
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          local-dir: ./ 
+          local-dir: ./
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
           exclude: |
             **/.git*
