@@ -63,12 +63,19 @@ jobs:
             **/vendor/**
             **/storage/**
             **/bootstrap/cache/**
+            **/.agents/**
+            **/.claude/**
+            **/.github/**
+            **/database/**
             .env.example
             .env.backup
             .env.production.example
             /tests/**
             /phpunit.xml
             /.editorconfig
+            /package.json
+            /package-lock.json
+            /vite.config.js
             README.md
             Thumbs.db
 
