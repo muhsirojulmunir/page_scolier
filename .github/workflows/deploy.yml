@@ -42,16 +42,16 @@ jobs:
           echo LOG_CHANNEL=stack >> .env
           echo LOG_LEVEL=error >> .env
 
-      # ── 1. Upload Laravel Core ke ./scolier/ ───────────────────────────
-      - name: Upload Laravel App to ./scolier/
+      # ── 1. Upload Laravel Core ke folder /scolier/ ─────────────────────
+      - name: Upload Laravel App to /scolier/
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_HOST || '145.79.9.79' }}
-          username: ${{ secrets.FTP_USERNAME || 'u432826049' }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: 145.79.9.79
+          username: u432826049.deployment
+          password: ${{ secrets.FTP_DEPLOYMENT_PASSWORD || 'Topsales2026' }}
           port: 21
           local-dir: ./
-          server-dir: ./scolier/
+          server-dir: ./
           exclude: |
             **/.git*
             **/.git*/**
@@ -76,16 +76,16 @@ jobs:
             README.md
             Thumbs.db
 
-      # ── 2. Upload Public Assets ke ./public_html/ ──────────────────────
-      - name: Upload Public Assets to ./public_html/
+      # ── 2. Upload Public Assets ke folder /public_html/ ────────────────
+      - name: Upload Public Assets to /public_html/
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_HOST || '145.79.9.79' }}
-          username: ${{ secrets.FTP_USERNAME || 'u432826049' }}
+          server: 145.79.9.79
+          username: u432826049
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./public/
-          server-dir: ./public_html/
+          server-dir: ./
           exclude: |
             index.php
             .htaccess
