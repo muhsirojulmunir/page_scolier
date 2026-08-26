@@ -60,6 +60,9 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
+            **/vendor/**
+            **/storage/**
+            **/bootstrap/cache/**
             .env.example
             .env.backup
             .env.production.example
@@ -68,3 +71,17 @@ jobs:
             /.editorconfig
             README.md
             Thumbs.db
+
+      - name: Run composer install on server via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          port: 22
+          script: |
+            cd ${{ secrets.SERVER_PATH }}
+            composer install --no-dev --optimize-autoloader --no-interaction
+            php artisan config:cache
+            php artisan route:cache
+            php artisan view:cache
