@@ -34,15 +34,29 @@ jobs:
 
       - name: Create .env file
         run: |
-          echo APP_NAME=Scolier > .env
-          echo APP_ENV=production >> .env
-          echo APP_KEY=${{ secrets.APP_KEY }} >> .env
-          echo APP_DEBUG=false >> .env
-          echo APP_URL=${{ secrets.APP_URL }} >> .env
-          echo LOG_CHANNEL=stack >> .env
-          echo LOG_LEVEL=error >> .env
+          cat << 'EOF' > .env
+          APP_NAME=Scolier
+          APP_ENV=production
+          APP_KEY=${{ secrets.APP_KEY }}
+          APP_DEBUG=false
+          APP_URL=https://studywithscolier.com
 
-      # ── 1. Upload Laravel Core ke folder /scolier/ ─────────────────────
+          APP_LOCALE=id
+          APP_FALLBACK_LOCALE=en
+
+          LOG_CHANNEL=stack
+          LOG_LEVEL=error
+
+          DB_CONNECTION=sqlite
+          DB_DATABASE=/home/u432826049/domains/studywithscolier.com/scolier/database/database.sqlite
+
+          SESSION_DRIVER=file
+          CACHE_STORE=file
+          QUEUE_CONNECTION=sync
+          FILESYSTEM_DISK=local
+          EOF
+
+      # ── 1. Upload Full Laravel Core ke folder /scolier/ ────────────────
       - name: Upload Laravel App to /scolier/
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -63,7 +77,6 @@ jobs:
             **/.agents/**
             **/.claude/**
             **/.github/**
-            **/database/**
             .env.example
             .env.backup
             .env.production.example
@@ -76,7 +89,7 @@ jobs:
             README.md
             Thumbs.db
 
-      # ── 2. Upload Public Assets ke folder /public_html/ ────────────────
+      # ── 2. Upload Semua Public Assets ke folder /public_html/ ──────────
       - name: Upload Public Assets to /public_html/
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
