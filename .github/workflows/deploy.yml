@@ -49,8 +49,13 @@ jobs:
         run: sudo apt-get install -y sshpass rsync
 
       - name: Deploy via rsync over SSH
+        env:
+          SSH_HOST: ${{ secrets.FTP_HOST }}
+          SSH_USER: ${{ secrets.FTP_USERNAME }}
+          SSH_PASS: ${{ secrets.FTP_PASSWORD }}
+          DEPLOY_PATH: ${{ secrets.SERVER_PATH }}
         run: |
-          sshpass -p "${{ secrets.SSH_PASSWORD }}" rsync -az \
+          sshpass -p "$SSH_PASS" rsync -az \
             --exclude='.git' \
             --exclude='.gitignore' \
             --exclude='node_modules' \
@@ -68,14 +73,14 @@ jobs:
             --exclude='vite.config.js' \
             --exclude='README.md' \
             -e "ssh -o StrictHostKeyChecking=no -p 22" \
-            ./ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SERVER_PATH }}/
+            ./ $SSH_USER@$SSH_HOST:$DEPLOY_PATH/
 
-      - name: Run composer install and optimize on server
+      - name: Run composer install on server
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
+          host: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           script: |
             cd ${{ secrets.SERVER_PATH }}
