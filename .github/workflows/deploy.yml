@@ -45,15 +45,30 @@ jobs:
           echo LOG_CHANNEL=stack >> .env
           echo LOG_LEVEL=error >> .env
 
-      - name: Deploy files via SCP (SSH)
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          port: 22
-          source: "app/,bootstrap/,config/,lang/,public/,resources/,routes/,composer.json,composer.lock,artisan,.env"
-          target: ${{ secrets.SERVER_PATH }}
+      - name: Install sshpass and rsync
+        run: sudo apt-get install -y sshpass rsync
+
+      - name: Deploy via rsync over SSH
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" rsync -az \
+            --exclude='.git' \
+            --exclude='.gitignore' \
+            --exclude='node_modules' \
+            --exclude='vendor' \
+            --exclude='.agents' \
+            --exclude='.claude' \
+            --exclude='.github' \
+            --exclude='database' \
+            --exclude='storage' \
+            --exclude='tests' \
+            --exclude='.env.example' \
+            --exclude='phpunit.xml' \
+            --exclude='package.json' \
+            --exclude='package-lock.json' \
+            --exclude='vite.config.js' \
+            --exclude='README.md' \
+            -e "ssh -o StrictHostKeyChecking=no -p 22" \
+            ./ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:${{ secrets.SERVER_PATH }}/
 
       - name: Run composer install and optimize on server
         uses: appleboy/ssh-action@v1.0.3
