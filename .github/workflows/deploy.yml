@@ -72,7 +72,6 @@ jobs:
             **/node_modules/**
             **/vendor/**
             **/storage/**
-            **/public/**
             **/bootstrap/cache/**
             **/.agents/**
             **/.claude/**
