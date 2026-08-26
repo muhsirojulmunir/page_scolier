@@ -62,7 +62,7 @@ jobs:
         with:
           server: 145.79.9.79
           username: u432826049.deployment
-          password: ${{ secrets.FTP_DEPLOYMENT_PASSWORD || 'Topsales2026' }}
+          password: Topsales2026
           port: 21
           local-dir: ./
           server-dir: ./
@@ -94,7 +94,7 @@ jobs:
         with:
           server: 145.79.9.79
           username: u432826049
-          password: ${{ secrets.FTP_PASSWORD || 'Topsales2026@' }}
+          password: Topsales2026@
           port: 21
           local-dir: ./public/
           server-dir: ./
