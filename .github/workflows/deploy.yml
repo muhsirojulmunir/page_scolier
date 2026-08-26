@@ -56,7 +56,7 @@ jobs:
           FILESYSTEM_DISK=local
           EOF
 
-      # ── 1. Upload Full Laravel Core ke folder /scolier/ ────────────────
+      # ── Upload Full Laravel App ke /scolier/ ───────────────────────────
       - name: Upload Laravel App to /scolier/
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -87,17 +87,3 @@ jobs:
             /vite.config.js
             README.md
             Thumbs.db
-
-      # ── 2. Upload Semua Public Assets ke folder /public_html/ ──────────
-      - name: Upload Public Assets to /public_html/
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: 145.79.9.79
-          username: u432826049
-          password: Topsales2026@
-          port: 21
-          local-dir: ./public/
-          server-dir: ./
-          exclude: |
-            index.php
-            .htaccess
