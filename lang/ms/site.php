@@ -58,7 +58,7 @@ return [
     ],
 
     'hero' => [
-        'badge' => 'Surabaya · Kelas Bersemuka & Dalam Talian',
+        'badge' => 'Perunding Pendidikan · Surabaya',
         'title_1' => 'Capai impian anda',
         'title_2' => 'belajar & berkerjaya',
         'title_accent' => 'di luar negara.',
@@ -104,8 +104,8 @@ return [
         'index' => 'Tentang Kami',
         'title' => 'Dari sebuah bilik darjah di Surabaya, menuju bilik darjah',
         'title_accent' => 'di seluruh dunia.',
-        'body_1' => 'Scolier bermula daripada satu pemerhatian mudah: ramai anak muda mempunyai tekad kuat untuk melanjutkan pengajian atau bekerja di luar negara, tetapi terhenti pada titik yang sama — bahasa dan dokumen.',
-        'body_2' => 'Kerana itu kami tidak berhenti di bilik darjah. Kami mengajar bahasanya, menyediakan pensijilannya, mengemaskan dokumennya, dan membimbing sehingga anda benar-benar berlepas.',
+        'body_1' => 'Scolier bermula daripada satu pemerhatian mudah: ramai anak muda bertekad melanjutkan pengajian atau berkerjaya ke luar negara, tetapi tersekat oleh halangan yang sama — bahasa dan dokumen.',
+        'body_2' => 'Maka skop kerja kami melangkaui bilik darjah: mengajar bahasanya, membawa anda menembusi pensijilan, mengemaskan dokumennya, dan menemani sehingga hari berlepas.',
         'visit' => 'Kunjungi kami',
     ],
 
@@ -151,7 +151,7 @@ return [
         'japanese' => [
             'kicker' => 'Kursus Bahasa',
             'title' => 'Bahasa Jepun',
-            'body' => 'Daripada mengenal hiragana sehingga bersedia menduduki JLPT. Tumpuan pada kemahiran yang benar-benar digunakan di kelas dan tempat kerja.',
+            'body' => 'Daripada mengenal hiragana sehingga bersedia menduduki JLPT. Tumpuan pada kemahiran yang terpakai di bilik darjah mahupun tempat kerja.',
             'points' => ['Tahap N5 hingga N1', 'Kanji, tatabahasa dan perbualan', 'Simulasi peperiksaan berkala'],
         ],
         'mandarin' => [
@@ -169,7 +169,7 @@ return [
         'study' => [
             'kicker' => 'Perundingan',
             'title' => 'Pengajian Ijazah & Sarjana di Luar Negara',
-            'body' => 'Pemetaan bidang pengajian, universiti dan negara destinasi yang realistik dengan latar belakang serta bajet anda.',
+            'body' => 'Menyusun senarai universiti dan bidang pengajian yang realistik dengan rekod akademik serta bajet anda.',
             'points' => ['Pemilihan universiti & bidang', 'Penyediaan esei & surat motivasi', 'Maklumat laluan biasiswa'],
         ],
         'visa' => [
@@ -216,7 +216,7 @@ return [
         ],
         'departure' => [
             'title' => 'Hari Berlepas',
-            'body' => 'Pengurusan visa, taklimat budaya dan etika kerja, sehingga anda benar-benar berlepas.',
+            'body' => 'Pensijilan selesai, dokumen lengkap, dan tarikh penerbangan anda sudah pasti.',
         ],
     ],
 
@@ -226,13 +226,13 @@ return [
         'title_accent' => 'pintu berlepas.',
         'lede' => 'Enam peringkat yang kami bimbing secara berturutan — daripada memilih bidang pengajian sehingga anda menetap di sana, dan masih boleh menghubungi kami bila-bila masa.',
         'wellness_title' => 'Student Wellness Consultancy',
-        'wellness_lede' => 'Peringkat yang paling kerap ditinggalkan agensi lain. Mendarat di negara orang bukan garisan penamat — di situlah cabaran sebenarnya bermula.',
+        'wellness_lede' => 'Peringkat yang cenderung ditinggalkan agensi lain. Mendarat di negara orang bukan garisan penamat — di situlah cabaran sebenarnya bermula.',
     ],
 
     'journey' => [
         'academic' => [
             'title' => 'Perundingan Akademik',
-            'body' => 'Memetakan bidang pengajian, universiti dan negara destinasi yang benar-benar sesuai dengan keputusan, minat dan bajet anda — bukan sekadar yang sedang popular.',
+            'body' => 'Menimbang keputusan akademik, minat dan bajet anda untuk menentukan negara serta jurusan yang paling sesuai — bukan yang sedang popular.',
         ],
         'documents' => [
             'title' => 'Bimbingan Dokumen',
@@ -240,7 +240,7 @@ return [
         ],
         'wellness' => [
             'title' => 'Student Wellness Consultancy',
-            'body' => 'Selepas mendarat, anda tidak dibiarkan bersendirian. Kami bantu menyusun perkara yang menentukan selesa atau tidaknya anda tinggal di sana.',
+            'body' => 'Selepas mendarat, anda tidak dibiarkan bersendirian. Kami bantu menyusun perkara yang menentukan selesa atau tidaknya anda di negara baru.',
         ],
         'visa' => [
             'title' => 'Pengurusan Visa',
@@ -248,7 +248,7 @@ return [
         ],
         'departure' => [
             'title' => 'Hari Berlepas',
-            'body' => 'Taklimat budaya dan etika kerja, persiapan hari berlepas, sehingga anda benar-benar berangkat.',
+            'body' => 'Taklimat budaya dan etika kerja, kemudian penyediaan segala hal menjelang hari tersebut.',
         ],
         'keeptouch' => [
             'title' => 'Keep in Touch',
@@ -259,7 +259,7 @@ return [
     'wellness' => [
         'alumni' => [
             'title' => 'Pemandu Alumni Rasmi',
-            'body' => 'Dibimbing alumni yang benar-benar pernah tinggal di negara destinasi anda — bukan panduan umum hasil carian internet.',
+            'body' => 'Dibimbing alumni yang pernah menetap di negara destinasi anda — bukan panduan umum hasil carian internet.',
         ],
         'community' => [
             'title' => 'Komuniti yang Sihat',
@@ -315,11 +315,11 @@ return [
         ],
         'ssw' => [
             'q' => 'Apakah itu program Tokutei Ginou (SSW)?',
-            'a' => 'Tokutei Ginou atau Specified Skilled Worker ialah laluan pekerjaan rasmi ke Jepun bagi bidang tertentu seperti penjagaan warga emas, restoran, industri makanan, pertanian dan pembinaan. Syarat utamanya ialah lulus peperiksaan bahasa (JFT-Basic atau JLPT N4) dan ujian kemahiran mengikut bidang.',
+            'a' => 'Tokutei Ginou atau Specified Skilled Worker ialah status kediaman rasmi yang membolehkan warga asing bekerja di Jepun dalam sektor tertentu: penjagaan warga emas, restoran, industri makanan, pertanian dan pembinaan. Syaratnya lulus peperiksaan bahasa (JFT-Basic atau JLPT N4) serta ujian kompetensi bagi sektor yang dipilih.',
         ],
         'duration' => [
-            'q' => 'Berapa lama sehingga bersedia untuk berlepas?',
-            'a' => 'Bergantung pada tahap permulaan, sasaran, dan laluan yang dipilih. Selepas perundingan dan ujian penempatan, kami berikan anggaran masa yang realistik berserta jadual pembelajarannya.',
+            'q' => 'Berapa lama masa yang diperlukan?',
+            'a' => 'Bergantung pada tahap permulaan dan matlamat akhir anda. Selepas ujian penempatan, kami kongsikan anggaran tempoh yang realistik berserta cadangan jadual pembelajarannya.',
         ],
         'format' => [
             'q' => 'Kelasnya bersemuka atau dalam talian?',
@@ -327,11 +327,11 @@ return [
         ],
         'campus' => [
             'q' => 'Adakah Scolier turut membantu permohonan universiti dan biasiswa?',
-            'a' => 'Ya. Kami membimbing pemilihan universiti dan bidang pengajian, penyediaan esei serta surat motivasi, kelengkapan dokumen, dan memberikan maklumat laluan biasiswa yang berkaitan dengan matlamat anda.',
+            'a' => 'Ya. Kami membimbing pemilihan universiti dan bidang pengajian, penyediaan esei serta surat motivasi, kelengkapan dokumen, serta memetakan peluang biasiswa yang berkaitan dengan rancangan anda.',
         ],
         'cost' => [
             'q' => 'Bagaimana cara bermula dan berapakah kosnya?',
-            'a' => 'Mulakan dengan perundingan percuma melalui WhatsApp. Kos berbeza mengikut program, tempoh, dan laluan yang dipilih, jadi perinciannya kami kongsikan setelah keperluan anda jelas.',
+            'a' => 'Mulakan dengan sesi perundingan percuma melalui WhatsApp. Kos mengikut program dan tempoh yang anda ambil, jadi perinciannya kami kongsikan setelah keperluan anda jelas.',
         ],
     ],
 

@@ -57,7 +57,7 @@ return [
     ],
 
     'hero' => [
-        'badge' => 'Surabaya · Kelas Offline & Online',
+        'badge' => 'Konsultan Pendidikan · Surabaya',
         'title_1' => 'Wujudkan mimpimu',
         'title_2' => 'belajar & berkarier',
         'title_accent' => 'di luar negeri.',
@@ -103,8 +103,8 @@ return [
         'index' => 'Tentang Kami',
         'title' => 'Dari satu ruang kelas di Surabaya, menuju ruang kelas',
         'title_accent' => 'di seluruh dunia.',
-        'body_1' => 'Scolier berangkat dari satu pengamatan sederhana: banyak anak muda Indonesia punya niat kuat untuk kuliah atau bekerja di luar negeri, tetapi berhenti di tahap yang sama — bahasa dan berkas.',
-        'body_2' => 'Karena itu kami tidak berhenti di ruang kelas. Kami mengajarkan bahasanya, menyiapkan sertifikasinya, merapikan dokumennya, dan mendampingi sampai kamu benar-benar berangkat.',
+        'body_1' => 'Scolier berangkat dari satu pengamatan sederhana: banyak anak muda Indonesia bertekad melanjutkan studi atau berkarier ke mancanegara, tetapi tertahan oleh hambatan yang sama — bahasa dan dokumen.',
+        'body_2' => 'Maka cakupan kerja kami melampaui ruang kelas: mengajarkan bahasanya, mengantar sertifikasinya, merapikan dokumennya, dan menemani hingga hari keberangkatan.',
         'visit' => 'Kunjungi kami',
     ],
 
@@ -150,7 +150,7 @@ return [
         'japanese' => [
             'kicker' => 'Kursus Bahasa',
             'title' => 'Bahasa Jepang',
-            'body' => 'Dari mengenal hiragana hingga siap menghadapi JLPT. Fokus pada kemampuan yang benar-benar dipakai di kelas dan tempat kerja.',
+            'body' => 'Dari mengenal hiragana hingga siap menghadapi JLPT. Fokus pada kemampuan yang terpakai di ruang kelas maupun tempat kerja.',
             'points' => ['Level N5 sampai N1', 'Kanji, tata bahasa, dan percakapan', 'Simulasi ujian berkala'],
         ],
         'mandarin' => [
@@ -168,7 +168,7 @@ return [
         'study' => [
             'kicker' => 'Konsultasi',
             'title' => 'Studi S1 & S2 Luar Negeri',
-            'body' => 'Pemetaan jurusan, kampus, dan negara tujuan yang realistis dengan latar belakang serta anggaran kamu.',
+            'body' => 'Menyusun pilihan kampus dan bidang studi yang realistis terhadap latar belakang akademik serta anggaranmu.',
             'points' => ['Pemilihan kampus & jurusan', 'Penyusunan esai & motivation letter', 'Informasi jalur beasiswa'],
         ],
         'visa' => [
@@ -215,7 +215,7 @@ return [
         ],
         'departure' => [
             'title' => 'Keberangkatan',
-            'body' => 'Pengurusan visa, pembekalan budaya dan etika kerja, sampai kamu benar-benar berangkat.',
+            'body' => 'Sertifikasi tuntas, dokumen lengkap, dan tanggal terbangmu sudah pasti.',
         ],
     ],
 
@@ -225,13 +225,13 @@ return [
         'title_accent' => 'pintu keberangkatan.',
         'lede' => 'Enam tahap yang kami dampingi berurutan — dari memilih jurusan sampai kamu sudah tinggal di sana, dan tetap bisa menghubungi kami kapan pun.',
         'wellness_title' => 'Student Wellness Consultancy',
-        'wellness_lede' => 'Tahap yang paling sering ditinggalkan lembaga lain. Mendarat di negara orang bukan garis akhir — justru di situ tantangan sebenarnya dimulai.',
+        'wellness_lede' => 'Tahap yang kerap ditinggalkan lembaga lain. Mendarat di negara orang bukan garis akhir — justru di situ tantangan sebenarnya dimulai.',
     ],
 
     'journey' => [
         'academic' => [
             'title' => 'Konsultasi Akademik',
-            'body' => 'Memetakan jurusan, kampus, dan negara tujuan yang benar-benar cocok dengan nilai, minat, dan anggaranmu — bukan sekadar yang sedang ramai diminati.',
+            'body' => 'Menimbang nilai akademik, minat, dan anggaranmu untuk menentukan negara serta jurusan yang paling sesuai — bukan yang sedang ramai diminati.',
         ],
         'documents' => [
             'title' => 'Pendampingan Dokumen',
@@ -239,7 +239,7 @@ return [
         ],
         'wellness' => [
             'title' => 'Student Wellness Consultancy',
-            'body' => 'Setelah mendarat, kamu tidak dilepas sendirian. Kami bantu menata hal-hal yang menentukan betah atau tidaknya kamu tinggal di sana.',
+            'body' => 'Setelah mendarat, kamu tidak dilepas sendirian. Kami bantu menata hal-hal yang menentukan betah atau tidaknya kamu di negara baru.',
         ],
         'visa' => [
             'title' => 'Pengurusan Visa',
@@ -247,7 +247,7 @@ return [
         ],
         'departure' => [
             'title' => 'Keberangkatan',
-            'body' => 'Pembekalan budaya dan etika kerja, persiapan hari keberangkatan, sampai kamu benar-benar terbang.',
+            'body' => 'Pembekalan budaya dan etika kerja, lalu penyiapan segala hal menjelang hari-H.',
         ],
         'keeptouch' => [
             'title' => 'Keep in Touch',
@@ -258,7 +258,7 @@ return [
     'wellness' => [
         'alumni' => [
             'title' => 'Pemandu Alumni Resmi',
-            'body' => 'Didampingi alumni yang benar-benar pernah tinggal di negara tujuanmu — bukan panduan umum hasil pencarian internet.',
+            'body' => 'Diarahkan alumni yang pernah menetap di negara tujuanmu — bukan panduan umum hasil pencarian internet.',
         ],
         'community' => [
             'title' => 'Komunitas yang Sehat',
@@ -314,11 +314,11 @@ return [
         ],
         'ssw' => [
             'q' => 'Apa itu program Tokutei Ginou (SSW)?',
-            'a' => 'Tokutei Ginou atau Specified Skilled Worker adalah jalur kerja resmi ke Jepang untuk bidang tertentu seperti perawatan lansia, restoran, industri makanan, pertanian, dan konstruksi. Syarat utamanya adalah lulus ujian bahasa (JFT-Basic atau JLPT N4) dan uji keterampilan sesuai bidang.',
+            'a' => 'Tokutei Ginou atau Specified Skilled Worker adalah izin tinggal resmi yang memungkinkan warga asing bekerja di Jepang pada sektor tertentu: perawatan lansia, restoran, industri makanan, pertanian, dan konstruksi. Syaratnya lulus ujian bahasa (JFT-Basic atau JLPT N4) serta uji kompetensi pada sektor yang dipilih.',
         ],
         'duration' => [
-            'q' => 'Berapa lama sampai siap berangkat?',
-            'a' => 'Bergantung pada level awal, target, dan jalur yang dipilih. Setelah konsultasi dan tes penempatan, kami berikan perkiraan waktu yang realistis beserta jadwal belajarnya.',
+            'q' => 'Berapa lama waktu yang dibutuhkan?',
+            'a' => 'Bergantung pada level awal dan tujuan akhirmu. Setelah tes penempatan, kami sampaikan perkiraan durasi yang realistis beserta rancangan jadwal belajarnya.',
         ],
         'format' => [
             'q' => 'Kelasnya offline atau online?',
@@ -326,11 +326,11 @@ return [
         ],
         'campus' => [
             'q' => 'Apakah Scolier juga membantu pendaftaran kampus dan beasiswa?',
-            'a' => 'Ya. Kami mendampingi pemilihan kampus dan jurusan, penyusunan esai serta motivation letter, kelengkapan berkas, dan memberikan informasi jalur beasiswa yang relevan dengan tujuanmu.',
+            'a' => 'Ya. Kami mendampingi pemilihan kampus dan jurusan, penyusunan esai serta motivation letter, kelengkapan dokumen, serta memetakan peluang beasiswa yang relevan dengan rencanamu.',
         ],
         'cost' => [
             'q' => 'Bagaimana cara mulai dan berapa biayanya?',
-            'a' => 'Mulailah dari konsultasi gratis melalui WhatsApp. Biaya berbeda-beda tergantung program, durasi, dan jalur yang dipilih, jadi rinciannya kami sampaikan setelah kebutuhanmu jelas.',
+            'a' => 'Mulailah dari sesi konsultasi gratis lewat WhatsApp. Besaran biaya mengikuti program dan durasi yang kamu ambil, jadi rinciannya kami sampaikan setelah kebutuhanmu jelas.',
         ],
     ],
 

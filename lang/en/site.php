@@ -56,7 +56,7 @@ return [
     ],
 
     'hero' => [
-        'badge' => 'Surabaya · In-person & Online Classes',
+        'badge' => 'Education Consultant · Surabaya',
         'title_1' => 'Make your dream of',
         'title_2' => 'studying & building a career',
         'title_accent' => 'abroad real.',
@@ -102,8 +102,8 @@ return [
         'index' => 'About Us',
         'title' => 'From a single classroom in Surabaya, to classrooms',
         'title_accent' => 'around the world.',
-        'body_1' => 'Scolier began with one simple observation: plenty of young Indonesians are determined to study or work abroad, yet they stall at exactly the same point — the language and the paperwork.',
-        'body_2' => 'So we do not stop at the classroom. We teach the language, prepare the certification, put the documents in order, and stay with you until you have genuinely departed.',
+        'body_1' => 'Scolier began with one simple observation: plenty of young Indonesians are determined to study or build a career overseas, yet they run into the same two obstacles — the language and the documents.',
+        'body_2' => 'So our remit reaches beyond the classroom: teaching the language, carrying you through certification, putting the documents in order, and staying with you up to departure day.',
         'visit' => 'Visit us',
     ],
 
@@ -149,7 +149,7 @@ return [
         'japanese' => [
             'kicker' => 'Language Course',
             'title' => 'Japanese',
-            'body' => 'From your first hiragana to sitting the JLPT with confidence. Focused on the language you will actually use in class and at work.',
+            'body' => 'From your first hiragana to sitting the JLPT with confidence. Focused on the language you put to use in the classroom and on the job.',
             'points' => ['Levels N5 through N1', 'Kanji, grammar and conversation', 'Regular mock exams'],
         ],
         'mandarin' => [
@@ -167,7 +167,7 @@ return [
         'study' => [
             'kicker' => 'Consultation',
             'title' => 'Undergraduate & Postgraduate Study Abroad',
-            'body' => 'Mapping out a realistic course, university and destination country against your background and your budget.',
+            'body' => 'Building a shortlist of universities and fields of study that are realistic for your academic record and your budget.',
             'points' => ['Choosing university & course', 'Essays & motivation letters', 'Scholarship route guidance'],
         ],
         'visa' => [
@@ -214,7 +214,7 @@ return [
         ],
         'departure' => [
             'title' => 'Departure',
-            'body' => 'Visa processing, briefings on culture and workplace etiquette, right up to the moment you actually leave.',
+            'body' => 'Certification complete, documents in order, and your flight date confirmed.',
         ],
     ],
 
@@ -222,15 +222,15 @@ return [
         'index' => 'Your Journey With Scolier',
         'title' => 'Support that does not stop at the',
         'title_accent' => 'departure gate.',
-        'lede' => 'Six stages we walk with you through — from choosing your course to living there, with our line still open whenever you need it.',
+        'lede' => 'Six stages we walk with you through — from choosing your course to settling into daily life abroad, with our line still open whenever you need it.',
         'wellness_title' => 'Student Wellness Consultancy',
-        'wellness_lede' => 'The stage most agencies walk away from. Landing in a foreign country is not the finish line — that is precisely where the real challenge begins.',
+        'wellness_lede' => 'The stage agencies tend to walk away from. Landing in a foreign country is not the finish line — that is precisely where the real challenge begins.',
     ],
 
     'journey' => [
         'academic' => [
             'title' => 'Academic Consultation',
-            'body' => 'Mapping the course, university and destination country that genuinely fit your grades, your interests and your budget — not simply whatever is trending.',
+            'body' => 'Weighing your grades, your interests and your budget to settle on the country and the course that fit best — not whatever is trending.',
         ],
         'documents' => [
             'title' => 'Document Support',
@@ -246,7 +246,7 @@ return [
         ],
         'departure' => [
             'title' => 'Departure',
-            'body' => 'Briefings on culture and workplace etiquette, getting departure day ready, right up to the moment you fly.',
+            'body' => 'Briefings on culture and workplace etiquette, then everything that needs settling before the day itself.',
         ],
         'keeptouch' => [
             'title' => 'Keep in Touch',
@@ -257,7 +257,7 @@ return [
     'wellness' => [
         'alumni' => [
             'title' => 'Official Alumni Guides',
-            'body' => 'Guided by alumni who have genuinely lived in your destination country — not generic advice pulled off the internet.',
+            'body' => 'Guided by alumni who have lived in your destination country — not generic advice pulled off the internet.',
         ],
         'community' => [
             'title' => 'A Healthy Community',
@@ -313,11 +313,11 @@ return [
         ],
         'ssw' => [
             'q' => 'What is the Tokutei Ginou (SSW) programme?',
-            'a' => 'Tokutei Ginou, or Specified Skilled Worker, is the official route to working in Japan in particular sectors such as elderly care, food service, food manufacturing, agriculture and construction. The main requirements are passing a language exam (JFT-Basic or JLPT N4) and a skills test for your sector.',
+            'a' => 'Tokutei Ginou, or Specified Skilled Worker, is an official residence status allowing foreign nationals to work in Japan in particular sectors: elderly care, food service, food manufacturing, agriculture and construction. You need to pass a language exam (JFT-Basic or JLPT N4) and a competency test for your chosen sector.',
         ],
         'duration' => [
-            'q' => 'How long until I am ready to leave?',
-            'a' => 'It depends on your starting level, your target and the route you choose. After the consultation and placement test we give you a realistic timeframe along with the study schedule.',
+            'q' => 'How long does it take?',
+            'a' => 'It depends on your starting level and where you want to end up. After the placement test we give you a realistic timeframe along with a proposed study schedule.',
         ],
         'format' => [
             'q' => 'Are classes in person or online?',
@@ -325,11 +325,11 @@ return [
         ],
         'campus' => [
             'q' => 'Does Scolier also help with university applications and scholarships?',
-            'a' => 'Yes. We support the choice of university and course, essays and motivation letters, completeness of documents, and provide guidance on scholarship routes relevant to your goal.',
+            'a' => 'Yes. We support the choice of university and course, essays and motivation letters, completeness of documents, and map out the scholarship opportunities relevant to your plan.',
         ],
         'cost' => [
             'q' => 'How do I start, and what does it cost?',
-            'a' => 'Start with a free consultation over WhatsApp. Fees vary by programme, duration and the route you choose, so we give you the breakdown once your needs are clear.',
+            'a' => 'Start with a free consultation over WhatsApp. Fees follow the programme and duration you take on, so we give you the breakdown once your needs are clear.',
         ],
     ],
 
