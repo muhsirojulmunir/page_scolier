@@ -27,7 +27,11 @@ class AppServiceProvider extends ServiceProvider
             $destManifest = $publicHtml . '/build/manifest.json';
             if (file_exists($srcManifest) && (! file_exists($destManifest) || filemtime($srcManifest) > filemtime($destManifest))) {
                 self::copyDirectory(public_path('build'), $publicHtml . '/build');
-                if (is_dir(public_path('img'))) {
+            }
+            if (is_dir(public_path('img'))) {
+                $targetLogo = $publicHtml . '/img/logo-nav.png';
+                $srcLogo = public_path('img/logo-nav.png');
+                if (! file_exists($targetLogo) || (file_exists($srcLogo) && filemtime($srcLogo) > @filemtime($targetLogo))) {
                     self::copyDirectory(public_path('img'), $publicHtml . '/img');
                 }
             }
@@ -51,7 +55,7 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Salin direktori secara rekursif.
      */
-    protected static function copyDirectory(string $src, string $dest): void
+    public static function copyDirectory(string $src, string $dest): void
     {
         if (! is_dir($src)) {
             return;

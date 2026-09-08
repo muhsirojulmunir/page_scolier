@@ -16,7 +16,7 @@
 <img
     src="{{ asset($simple ? 'img/logo-nav.png' : 'img/logo-full.png') }}"
     alt="{{ $alt }}"
-    width="{{ $simple ? 920 : 900 }}"
+    width="900"
     height="340"
     draggable="false"
     {{ $attributes->merge(['class' => 'w-auto select-none']) }}
