@@ -58,9 +58,9 @@ return [
 
     'hero' => [
         'badge' => 'Konsultan Pendidikan · Surabaya',
-        'title_1' => 'Wujudkan mimpimu',
-        'title_2' => 'belajar & berkarier',
-        'title_accent' => 'di luar negeri.',
+        'title_1' => 'Where Students',
+        'title_2' => '',
+        'title_accent' => 'Become Global.',
         'lede' => 'Scolier menyiapkanmu dari nol — kursus Bahasa Jepang, Mandarin, dan Inggris, program :ssw, hingga pendaftaran S1/S2 di kampus luar negeri.',
         'cta_primary' => 'Konsultasi Gratis',
         'cta_secondary' => 'Lihat Program',

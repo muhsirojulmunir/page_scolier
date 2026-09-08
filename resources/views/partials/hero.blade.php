@@ -26,7 +26,9 @@
 
                 <h1 data-hero-item class="display-1 mt-7 text-white">
                     {{ __('site.hero.title_1') }}<br>
-                    {{ __('site.hero.title_2') }}<br>
+                    @if (filled(__('site.hero.title_2')))
+                        {{ __('site.hero.title_2') }}<br>
+                    @endif
                     <span class="accent-italic">{{ __('site.hero.title_accent') }}</span>
                 </h1>
 

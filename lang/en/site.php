@@ -57,9 +57,9 @@ return [
 
     'hero' => [
         'badge' => 'Education Consultant · Surabaya',
-        'title_1' => 'Make your dream of',
-        'title_2' => 'studying & building a career',
-        'title_accent' => 'abroad real.',
+        'title_1' => 'Where Students',
+        'title_2' => '',
+        'title_accent' => 'Become Global.',
         'lede' => 'Scolier prepares you from scratch — Japanese, Mandarin and English courses, the :ssw programme, and applications to universities abroad.',
         'cta_primary' => 'Free Consultation',
         'cta_secondary' => 'View Programmes',
