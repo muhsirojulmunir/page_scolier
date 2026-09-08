@@ -29,7 +29,7 @@
                 class="-m-2 flex shrink-0 items-center rounded-lg p-2 text-white transition-colors duration-300"
                 aria-label="{{ __('site.a11y.home') }}"
             >
-                <x-logo class="h-14 md:h-16" />
+                <x-logo class="h-14 md:h-16" :simple="true" />
             </a>
 
             {{-- Tautan desktop --}}
