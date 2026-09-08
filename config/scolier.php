@@ -70,6 +70,14 @@ return [
         ['key' => 'personal',  'value' => 1, 'suffix' => ':1'],
     ],
 
+    // Keuntungan & Layanan Utama Scolier. Teks di lang/{locale}/site.php -> benefits
+    'benefits' => [
+        ['key' => 'study_overseas',    'icon' => 'academic'],
+        ['key' => 'short_term',       'icon' => 'plane'],
+        ['key' => 'foreign_languages', 'icon' => 'chat'],
+        ['key' => 'tokutei_ginou',    'icon' => 'torii'],
+    ],
+
     // Empat pilar di section Tentang. Judul & isinya di lang/{locale}/site.php -> pillars
     'pillars' => [
         ['key' => 'teachers',  'icon' => 'academic'],

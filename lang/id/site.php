@@ -99,6 +99,60 @@ return [
         'Kensetsu — Konstruksi',
     ],
 
+    'benefits' => [
+        'index' => 'Keuntungan Bergabung',
+        'title' => 'Layanan & Keuntungan',
+        'title_accent' => 'Bersama Scolier.',
+        'lede' => 'Dapatkan pendampingan menyeluruh dan terpercaya untuk mewujudkan impian studi serta karier internasionalmu.',
+        'cta_label' => 'Konsultasi Program',
+        'items' => [
+            'study_overseas' => [
+                'badge' => 'Studi Formal',
+                'title' => 'Study Overseas',
+                'subtitle' => 'Sekolah & Kuliah Luar Negeri',
+                'desc' => 'Informasi lengkap dan pendampingan resmi pengurusan pendaftaran sekolah hingga universitas di luar negeri.',
+                'highlights' => [
+                    'Konsultasi Jurusan & Kampus',
+                    'Pengurusan Berkas & Visa Pelajar',
+                ],
+                'wa_text' => 'Halo Scolier, saya ingin konsultasi mengenai program Study Overseas (sekolah/kuliah di luar negeri).',
+            ],
+            'short_term' => [
+                'badge' => 'Program Singkat',
+                'title' => 'Short-Term Study',
+                'subtitle' => 'Summer School & Study Tour',
+                'desc' => 'Program studi singkat edukatif seperti Summer School dan Customized Study Tour fleksibel ke berbagai negara.',
+                'highlights' => [
+                    'Summer School Internasional',
+                    'Customized Study Tour Edukatif',
+                ],
+                'wa_text' => 'Halo Scolier, saya ingin konsultasi mengenai program Short-Term Study (Summer School & Study Tour).',
+            ],
+            'foreign_languages' => [
+                'badge' => 'Kursus Bahasa',
+                'title' => 'Kursus Bahasa Asing',
+                'subtitle' => 'Foreign Language Courses',
+                'desc' => 'Pelatihan bahasa asing intensif berstandar internasional bersama pengajar bersertifikasi dan kurikulum berbasis ujian.',
+                'highlights' => [
+                    'Inggris & Jepang',
+                    'Mandarin, Korea, dan lainnya',
+                ],
+                'wa_text' => 'Halo Scolier, saya ingin konsultasi mengenai Kursus Bahasa Asing (Inggris, Jepang, Mandarin, Korea, dll).',
+            ],
+            'tokutei_ginou' => [
+                'badge' => 'Karier Resmi',
+                'title' => 'Tokutei Ginou',
+                'subtitle' => 'Kerja Resmi di Jepang (SSW)',
+                'desc' => 'Informasi dan pengurusan peluang kerja di Jepang, 100% aman, legal, dan terikat kontrak kerja standar pemerintah Jepang.',
+                'highlights' => [
+                    '100% Aman & Legal',
+                    'Kontrak Standar Pemerintah Jepang',
+                ],
+                'wa_text' => 'Halo Scolier, saya ingin konsultasi mengenai peluang kerja resmi Tokutei Ginou (SSW) di Jepang.',
+            ],
+        ],
+    ],
+
     'about' => [
         'index' => 'Tentang Kami',
         'title' => 'Dari satu ruang kelas di Surabaya, menuju ruang kelas',

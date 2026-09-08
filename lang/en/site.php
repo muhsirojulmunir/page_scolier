@@ -98,6 +98,60 @@ return [
         'Kensetsu — Construction',
     ],
 
+    'benefits' => [
+        'index' => 'Core Benefits',
+        'title' => 'Services & Benefits',
+        'title_accent' => 'with Scolier.',
+        'lede' => 'Comprehensive and trusted guidance to achieve your international education and career ambitions.',
+        'cta_label' => 'Consult Programme',
+        'items' => [
+            'study_overseas' => [
+                'badge' => 'Formal Study',
+                'title' => 'Study Overseas',
+                'subtitle' => 'Schools & Universities Abroad',
+                'desc' => 'Comprehensive information and official guidance for admissions into schools and universities worldwide.',
+                'highlights' => [
+                    'University & Major Advisory',
+                    'Document & Student Visa Assistance',
+                ],
+                'wa_text' => 'Hello Scolier, I would like to consult about the Study Overseas programme.',
+            ],
+            'short_term' => [
+                'badge' => 'Short-Term',
+                'title' => 'Short-Term Study',
+                'subtitle' => 'Summer School & Study Tour',
+                'desc' => 'Flexible and immersive short-term academic programmes, Summer Schools, and customized educational study tours.',
+                'highlights' => [
+                    'International Summer School',
+                    'Customized Educational Study Tours',
+                ],
+                'wa_text' => 'Hello Scolier, I would like to consult about Short-Term Study and Study Tours.',
+            ],
+            'foreign_languages' => [
+                'badge' => 'Language Training',
+                'title' => 'Foreign Language Courses',
+                'subtitle' => 'Certified Curriculum',
+                'desc' => 'Intensive language courses with certified tutors and exam-focused curriculum for international standards.',
+                'highlights' => [
+                    'English & Japanese',
+                    'Mandarin, Korean & more',
+                ],
+                'wa_text' => 'Hello Scolier, I would like to consult about Foreign Language Courses (English, Japanese, Mandarin, Korean, etc).',
+            ],
+            'tokutei_ginou' => [
+                'badge' => 'Official Career',
+                'title' => 'Tokutei Ginou',
+                'subtitle' => 'Work in Japan (SSW)',
+                'desc' => 'Official career pathways in Japan: 100% legal, secure, and contracted under Japanese government standards.',
+                'highlights' => [
+                    '100% Safe & Legal',
+                    'Japanese Government Standard Contracts',
+                ],
+                'wa_text' => 'Hello Scolier, I would like to consult about Tokutei Ginou (SSW) job opportunities in Japan.',
+            ],
+        ],
+    ],
+
     'about' => [
         'index' => 'About Us',
         'title' => 'From a single classroom in Surabaya, to classrooms',

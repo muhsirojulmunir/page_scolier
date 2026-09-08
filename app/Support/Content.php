@@ -34,6 +34,15 @@ class Content
         return array_values(self::line('marquee'));
     }
 
+    /** Keuntungan & Layanan Utama Scolier. */
+    public static function benefits(): array
+    {
+        return array_map(
+            fn (array $b) => $b + self::line("benefits.items.{$b['key']}"),
+            config('scolier.benefits', []),
+        );
+    }
+
     /** Empat pilar di section Tentang. */
     public static function pillars(): array
     {

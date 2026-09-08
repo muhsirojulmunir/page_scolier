@@ -3,6 +3,7 @@
 @section('content')
     @include('partials.hero')
     @include('partials.marquee')
+    @include('partials.benefits')
     @include('partials.about')
     @include('partials.programs')
     @include('partials.process')

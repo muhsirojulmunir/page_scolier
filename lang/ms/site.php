@@ -100,6 +100,60 @@ return [
         'Kensetsu — Pembinaan',
     ],
 
+    'benefits' => [
+        'index' => 'Kelebihan Menyertai Kami',
+        'title' => 'Perkhidmatan & Manfaat Utama',
+        'title_accent' => 'Bersama Scolier.',
+        'lede' => 'Dapatkan bimbingan menyeluruh dan dipercayai untuk merealisasikan impian pengajian serta kerjaya antarabangsa anda.',
+        'cta_label' => 'Konsultasi Program',
+        'items' => [
+            'study_overseas' => [
+                'badge' => 'Pengajian Formal',
+                'title' => 'Study Overseas',
+                'subtitle' => 'Sekolah & Universiti Luar Negara',
+                'desc' => 'Maklumat lengkap dan bimbingan rasmi urusan kemasukan sekolah hingga universiti di luar negara.',
+                'highlights' => [
+                    'Konsultasi Jurusan & Kampus',
+                    'Pengurusan Dokumen & Visa Pelajar',
+                ],
+                'wa_text' => 'Salam Scolier, saya ingin mendapatkan konsultasi mengenai program Study Overseas.',
+            ],
+            'short_term' => [
+                'badge' => 'Program Jangka Pendek',
+                'title' => 'Short-Term Study',
+                'subtitle' => 'Summer School & Study Tour',
+                'desc' => 'Program pengajian singkat bermaklumat seperti Summer School dan Customized Study Tour fleksibel ke pelbagai negara.',
+                'highlights' => [
+                    'Summer School Antarabangsa',
+                    'Lawatan Sambil Belajar Tersuai',
+                ],
+                'wa_text' => 'Salam Scolier, saya ingin mendapatkan konsultasi mengenai Short-Term Study / Study Tour.',
+            ],
+            'foreign_languages' => [
+                'badge' => 'Kursus Bahasa',
+                'title' => 'Kursus Bahasa Asing',
+                'subtitle' => 'Foreign Language Courses',
+                'desc' => 'Latihan bahasa asing intensif bertaraf antarabangsa bersama pengajar bertauliah dan kurikulum berasaskan peperiksaan.',
+                'highlights' => [
+                    'Inggeris & Jepun',
+                    'Mandarin, Korea dan lain-lain',
+                ],
+                'wa_text' => 'Salam Scolier, saya ingin mendapatkan konsultasi mengenai Kursus Bahasa Asing.',
+            ],
+            'tokutei_ginou' => [
+                'badge' => 'Kerjaya Rasmi',
+                'title' => 'Tokutei Ginou',
+                'subtitle' => 'Bekerja di Jepun (SSW)',
+                'desc' => 'Maklumat dan pengurusan peluang kerjaya di Jepun, 100% selamat, sah, dan terikat kontrak kerja standard kerajaan Jepun.',
+                'highlights' => [
+                    '100% Sah & Selamat',
+                    'Kontrak Standard Kerajaan Jepun',
+                ],
+                'wa_text' => 'Salam Scolier, saya ingin mendapatkan konsultasi mengenai peluang kerja Tokutei Ginou di Jepun.',
+            ],
+        ],
+    ],
+
     'about' => [
         'index' => 'Tentang Kami',
         'title' => 'Dari sebuah bilik darjah di Surabaya, menuju bilik darjah',
