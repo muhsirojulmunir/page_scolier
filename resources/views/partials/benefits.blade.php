@@ -69,17 +69,12 @@
                     </div>
 
                     {{-- Baris Bawah: Tombol Aksi Konsultasi WhatsApp --}}
-                    <div class="mt-8 flex flex-wrap items-center justify-between gap-4 border-t border-navy-900/5 pt-5">
-                        <span class="inline-flex items-center gap-1.5 text-xs font-medium text-ink-muted">
-                            <x-icon name="sparkle" class="h-3.5 w-3.5 text-gold-500" />
-                            <span>{{ __('site.hero.note') }}</span>
-                        </span>
-
+                    <div class="mt-8 border-t border-navy-900/10 pt-5">
                         <a
                             href="{{ $waUrl($b['wa_text'] ?? null) }}"
                             target="_blank"
                             rel="noopener"
-                            class="btn btn-outline text-xs !py-2.5 !px-5 flex items-center gap-2 group/btn"
+                            class="btn btn-outline text-xs !py-2.5 !px-5 inline-flex items-center gap-2 group/btn"
                         >
                             <span>{{ __('site.benefits.cta_label') }}</span>
                             <x-icon name="arrow-right" class="h-3.5 w-3.5 text-gold-600 transition-transform duration-200 group-hover/btn:translate-x-1" />

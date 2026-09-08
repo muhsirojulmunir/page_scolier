@@ -132,7 +132,7 @@ return [
             'foreign_languages' => [
                 'badge' => 'Kursus Bahasa',
                 'title' => 'Kursus Bahasa Asing',
-                'subtitle' => 'Foreign Language Courses',
+                'subtitle' => 'Kelas Intensif & Persiapan Ujian',
                 'desc' => 'Pelatihan bahasa asing intensif berstandar internasional bersama pengajar bersertifikasi dan kurikulum berbasis ujian.',
                 'highlights' => [
                     'Inggris & Jepang',
