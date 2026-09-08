@@ -43,6 +43,7 @@ return [
     ],
 
     'nav' => [
+        'services' => 'Perkhidmatan',
         'about' => 'Tentang',
         'programs' => 'Program',
         'process' => 'Aliran',

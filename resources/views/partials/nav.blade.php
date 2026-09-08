@@ -1,11 +1,12 @@
 @php
     $links = [
-        ['href' => '#tentang', 'label' => __('site.nav.about')],
-        ['href' => '#program', 'label' => __('site.nav.programs')],
+        ['href' => '#layanan',     'label' => __('site.nav.services')],
+        ['href' => '#tentang',     'label' => __('site.nav.about')],
+        ['href' => '#program',     'label' => __('site.nav.programs')],
         ['href' => '#alur',        'label' => __('site.nav.process')],
         ['href' => '#perjalanan',  'label' => __('site.nav.journey')],
-        ['href' => '#faq',     'label' => __('site.nav.faq')],
-        ['href' => '#kontak',  'label' => __('site.nav.contact')],
+        ['href' => '#faq',         'label' => __('site.nav.faq')],
+        ['href' => '#kontak',      'label' => __('site.nav.contact')],
     ];
 @endphp
 

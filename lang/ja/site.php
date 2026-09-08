@@ -42,6 +42,7 @@ return [
     ],
 
     'nav' => [
+        'services' => 'サービス',
         'about' => '私たちについて',
         'programs' => 'プログラム',
         'process' => '流れ',

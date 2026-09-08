@@ -41,6 +41,7 @@ return [
     ],
 
     'nav' => [
+        'services' => 'Services',
         'about' => 'About',
         'programs' => 'Programmes',
         'process' => 'Process',
