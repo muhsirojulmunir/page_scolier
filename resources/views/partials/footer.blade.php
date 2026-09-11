@@ -26,9 +26,8 @@
 
             {{-- Identitas --}}
             <div class="md:col-span-5">
-                {{-- Kedua baris tagline sudah menyatu di dalam logo,
-                     jadi tidak perlu ditulis ulang sebagai teks. --}}
-                <x-logo class="h-20" />
+                {{-- Logo ringkas (tanpa tagline) — sama dengan yang di navbar --}}
+                <x-logo class="h-14 md:h-16" :simple="true" />
 
                 <p class="lede mt-6 !max-w-sm !text-[0.9375rem]">
                     {{ __('site.footer.about') }}
@@ -56,6 +55,22 @@
                             <x-icon name="instagram" class="h-5 w-5" />
                         </a>
                     @endif
+                </div>
+
+                {{-- Barcode QR WhatsApp --}}
+                <div class="mt-7">
+                    <p class="mb-3 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-gold-400">
+                        Scan untuk chat WhatsApp
+                    </p>
+                    <a href="{{ $waUrl() }}" target="_blank" rel="noopener" title="{{ __('site.a11y.wa_contact') }}">
+                        <img
+                            src="{{ asset('img/barcode-wa.jpeg') }}"
+                            alt="QR Code WhatsApp Scolier"
+                            width="120"
+                            height="120"
+                            class="rounded-xl border border-white/10 opacity-90 transition-opacity duration-200 hover:opacity-100"
+                        />
+                    </a>
                 </div>
             </div>
 
@@ -120,7 +135,7 @@
                 {{ __('site.footer.rights', ['year' => date('Y')]) }}
             </p>
             <p class="text-xs text-white/60">
-                {{ __('site.brand.tagline') }}
+                {{ __('site.brand.descriptor') }}
             </p>
         </div>
     </div>
