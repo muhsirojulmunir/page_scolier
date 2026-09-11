@@ -61,69 +61,31 @@
 
             {{-- ---------------- Kolom QR Code Proporsional (Kanan) ---------------- --}}
             <div data-hero-item class="flex justify-center lg:col-span-5 lg:justify-end">
-                <div class="relative w-full max-w-[21rem] overflow-hidden rounded-3xl border border-white/15 bg-white/[0.04] p-6 text-center shadow-2xl backdrop-blur-xl transition-all duration-300 hover:border-gold-400/40 hover:bg-white/[0.06]">
+                <div class="relative w-full max-w-[19rem] sm:max-w-[20rem] overflow-hidden rounded-3xl border border-white/15 bg-white/[0.04] p-6 text-center shadow-2xl backdrop-blur-xl transition-all duration-300 hover:border-gold-400/40 hover:bg-white/[0.06]">
                     {{-- Kilau latar --}}
                     <div class="pointer-events-none absolute -right-12 -top-12 h-36 w-36 rounded-full bg-gold-400/10 blur-2xl"></div>
 
-                    {{-- Header Card --}}
-                    <div class="flex items-center justify-between border-b border-white/10 pb-3.5">
-                        <div class="flex items-center gap-2">
-                            <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gold-400 text-navy-950">
-                                <x-icon name="whatsapp" class="h-3.5 w-3.5" />
-                            </span>
-                            <span class="text-xs font-semibold uppercase tracking-wider text-white">
-                                Konsultasi WA
-                            </span>
-                        </div>
-                        <span class="flex items-center gap-1.5 rounded-full bg-gold-400/15 px-2 py-0.5 text-[0.65rem] font-medium text-gold-300">
-                            <span class="relative flex h-1.5 w-1.5">
-                                <span class="absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75 motion-safe:animate-ping"></span>
-                                <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-gold-400"></span>
-                            </span>
-                            Respon Cepat
-                        </span>
-                    </div>
-
-                    {{-- QR Code Persegi Besar & Proporsional --}}
-                    <div class="my-4 flex justify-center">
-                        <a
-                            href="{{ $waUrl() }}"
-                            target="_blank"
-                            rel="noopener"
-                            title="Klik untuk membuka WhatsApp Scolier"
-                            class="group relative block rounded-2xl bg-white p-3 shadow-lg transition-transform duration-300 hover:scale-[1.03]"
-                        >
+                    {{-- QR Code Persegi Bersih & Proporsional --}}
+                    <div class="flex justify-center">
+                        <div class="relative rounded-2xl bg-white p-3.5 shadow-xl transition-transform duration-300 hover:scale-[1.02]">
                             <img
                                 src="{{ asset('img/barcode-wa.jpeg') }}"
                                 alt="QR Code WhatsApp Scolier"
-                                width="180"
-                                height="180"
-                                class="h-40 w-40 object-contain sm:h-44 sm:w-44"
+                                width="200"
+                                height="200"
+                                class="h-44 w-44 object-contain sm:h-48 sm:w-48"
                             />
-                        </a>
+                        </div>
                     </div>
 
-                    {{-- Panduan --}}
-                    <div class="space-y-1">
-                        <p class="text-sm font-semibold text-white">
+                    {{-- Jarak & Teks Panduan Proporsional --}}
+                    <div class="mt-5 space-y-1.5">
+                        <p class="text-sm font-semibold tracking-wide text-white">
                             Scan via Kamera HP
                         </p>
-                        <p class="text-xs text-white/60">
+                        <p class="text-xs leading-relaxed text-white/60">
                             Langsung terhubung dengan konsultan Scolier
                         </p>
-                    </div>
-
-                    {{-- Tombol Langsung (Sangat praktis bila dibuka di HP) --}}
-                    <div class="mt-4 border-t border-white/10 pt-3">
-                        <a
-                            href="{{ $waUrl() }}"
-                            target="_blank"
-                            rel="noopener"
-                            class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white/10 py-2.5 text-xs font-semibold text-white transition-colors duration-200 hover:bg-gold-400 hover:text-navy-950"
-                        >
-                            <x-icon name="whatsapp" class="h-4 w-4" />
-                            <span>Ketuk Untuk Chat Langsung</span>
-                        </a>
                     </div>
                 </div>
             </div>
