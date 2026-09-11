@@ -33,18 +33,8 @@
                     {{ __('site.footer.about') }}
                 </p>
 
-                <div class="mt-7 flex items-center gap-3">
-                    <a
-                        href="{{ $waUrl() }}"
-                        target="_blank"
-                        rel="noopener"
-                        class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white/70 transition-colors duration-200 hover:border-gold-400/60 hover:text-gold-400"
-                    >
-                        <span class="sr-only">{{ __('site.a11y.wa_contact') }}</span>
-                        <x-icon name="whatsapp" class="h-5 w-5" />
-                    </a>
-
-                    @if (! empty($c['instagram']))
+                @if (! empty($c['instagram']))
+                    <div class="mt-7 flex items-center gap-3">
                         <a
                             href="https://instagram.com/{{ $c['instagram'] }}"
                             target="_blank"
@@ -54,24 +44,8 @@
                             <span class="sr-only">{{ __('site.a11y.instagram') }}</span>
                             <x-icon name="instagram" class="h-5 w-5" />
                         </a>
-                    @endif
-                </div>
-
-                {{-- Barcode QR WhatsApp --}}
-                <div class="mt-7">
-                    <p class="mb-3 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-gold-400">
-                        Scan untuk chat WhatsApp
-                    </p>
-                    <a href="{{ $waUrl() }}" target="_blank" rel="noopener" title="{{ __('site.a11y.wa_contact') }}">
-                        <img
-                            src="{{ asset('img/barcode-wa.jpeg') }}"
-                            alt="QR Code WhatsApp Scolier"
-                            width="120"
-                            height="120"
-                            class="rounded-xl border border-white/10 opacity-90 transition-opacity duration-200 hover:opacity-100"
-                        />
-                    </a>
-                </div>
+                    </div>
+                @endif
             </div>
 
             {{-- Tautan --}}

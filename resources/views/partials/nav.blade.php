@@ -65,7 +65,6 @@
                     rel="noopener"
                     class="btn btn-primary hidden !min-h-11 !px-5 !py-2.5 text-[0.875rem] xl:inline-flex"
                 >
-                    <x-icon name="whatsapp" class="h-[1.05rem] w-[1.05rem]" />
                     {{ __('site.nav.cta') }}
                 </a>
 
@@ -121,7 +120,6 @@
                 rel="noopener"
                 class="btn btn-primary w-full"
             >
-                <x-icon name="whatsapp" class="h-5 w-5" />
                 {{ __('site.nav.cta') }}
             </a>
 

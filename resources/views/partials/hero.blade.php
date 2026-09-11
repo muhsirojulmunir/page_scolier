@@ -29,21 +29,54 @@
                 ]) !!}
             </p>
 
-            <div data-hero-item class="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <a
-                    href="{{ $waUrl() }}"
-                    target="_blank"
-                    rel="noopener"
-                    class="btn btn-primary"
-                >
-                    <x-icon name="whatsapp" class="h-5 w-5" />
-                    {{ __('site.hero.cta_primary') }}
-                </a>
+            <div data-hero-item class="mt-9 flex flex-col gap-4 lg:flex-row lg:items-center">
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+                    <a
+                        href="{{ $waUrl() }}"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn btn-primary"
+                    >
+                        <x-icon name="whatsapp" class="h-5 w-5" />
+                        {{ __('site.hero.cta_primary') }}
+                    </a>
 
-                <a href="#program" class="btn btn-ghost-light">
-                    {{ __('site.hero.cta_secondary') }}
-                    <x-icon name="arrow-right" class="h-[1.15rem] w-[1.15rem]" />
-                </a>
+                    <a href="#program" class="btn btn-ghost-light">
+                        {{ __('site.hero.cta_secondary') }}
+                        <x-icon name="arrow-right" class="h-[1.15rem] w-[1.15rem]" />
+                    </a>
+                </div>
+
+                {{-- Mini QR Code Card untuk Laptop / Komputer --}}
+                <div class="hidden sm:flex items-center gap-3 rounded-2xl border border-white/15 bg-white/[0.04] p-2.5 pr-4 backdrop-blur-sm transition-all duration-300 hover:border-gold-400/40 hover:bg-white/[0.07]">
+                    <a
+                        href="{{ $waUrl() }}"
+                        target="_blank"
+                        rel="noopener"
+                        title="Scan atau klik untuk chat WhatsApp Scolier"
+                        class="group shrink-0"
+                    >
+                        <img
+                            src="{{ asset('img/barcode-wa.jpeg') }}"
+                            alt="QR Code WhatsApp Scolier"
+                            width="52"
+                            height="52"
+                            class="h-[3.25rem] w-[3.25rem] rounded-xl bg-white p-1 shadow-md transition-transform duration-200 group-hover:scale-105"
+                        />
+                    </a>
+                    <div class="text-left">
+                        <span class="flex items-center gap-1.5 text-[0.7rem] font-semibold uppercase tracking-wider text-gold-400">
+                            <span class="relative flex h-1.5 w-1.5">
+                                <span class="absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75 motion-safe:animate-ping"></span>
+                                <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-gold-400"></span>
+                            </span>
+                            Scan QR WhatsApp
+                        </span>
+                        <span class="mt-0.5 block text-xs text-white/75">
+                            Buka di laptop? Scan via HP
+                        </span>
+                    </div>
+                </div>
             </div>
 
             <ul data-hero-item class="mt-9 flex flex-wrap gap-x-6 gap-y-3">
