@@ -44,7 +44,7 @@ return [
     'nav' => [
         'services' => 'Layanan',
         'about' => 'Tentang Kami',
-        'programs' => 'Program',
+        'programs' => 'Program Kelas',
         'process' => 'Alur',
         'journey' => 'Perjalanan',
         'faq' => 'FAQ',
@@ -185,10 +185,10 @@ return [
     ],
 
     'programs_section' => [
-        'index' => 'Program & Layanan',
-        'title' => 'Satu tempat untuk bahasanya,',
-        'title_accent' => 'sekaligus jalan berangkatnya.',
-        'lede' => 'Pilih titik mulaimu. Setiap program dirancang menyambung ke tahap berikutnya, jadi kamu tidak perlu berpindah-pindah lembaga di tengah jalan.',
+        'index' => 'Program Kelas & Sertifikasi',
+        'title' => 'Pilihan Program Kelas &',
+        'title_accent' => 'Jalur Sertifikasi.',
+        'lede' => 'Mulai dari nol hingga siap menghadapi ujian resmi internasional dan penempatan kerja. Kurikulum terstruktur dengan simulasi ujian berkala.',
         'ask' => 'Tanya program ini',
         'fields_title' => 'Bidang kerja yang kami siapkan',
     ],
@@ -457,6 +457,7 @@ return [
             'ssw' => 'Tokutei Ginou (SSW)',
             'japanese' => 'Bahasa Jepang',
             'mandarin' => 'Bahasa Mandarin',
+            'korean' => 'Bahasa Korea',
             'english' => 'Bahasa Inggris',
             'about' => 'Tentang Kami',
             'process' => 'Alur Belajar',

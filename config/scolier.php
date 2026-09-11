@@ -107,8 +107,6 @@ return [
         ['key' => 'mandarin', 'icon' => 'lantern',  'featured' => false],
         ['key' => 'korean',   'icon' => 'chat',     'featured' => false],
         ['key' => 'english',  'icon' => 'chat',     'featured' => false],
-        ['key' => 'study',    'icon' => 'building', 'featured' => false],
-        ['key' => 'visa',     'icon' => 'document', 'featured' => false],
     ],
 
     // Lima langkah alur belajar. Teksnya di lang/{locale}/site.php -> steps

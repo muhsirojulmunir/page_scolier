@@ -8,6 +8,7 @@
             ['label' => __('site.footer.links.ssw'),      'href' => '#program'],
             ['label' => __('site.footer.links.japanese'), 'href' => '#program'],
             ['label' => __('site.footer.links.mandarin'), 'href' => '#program'],
+            ['label' => __('site.footer.links.korean'),   'href' => '#program'],
             ['label' => __('site.footer.links.english'),  'href' => '#program'],
         ],
         __('site.footer.group_company') => [

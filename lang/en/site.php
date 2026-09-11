@@ -43,7 +43,7 @@ return [
     'nav' => [
         'services' => 'Services',
         'about' => 'About Us',
-        'programs' => 'Programmes',
+        'programs' => 'Class Programmes',
         'process' => 'Process',
         'journey' => 'Journey',
         'faq' => 'FAQ',
@@ -184,10 +184,10 @@ return [
     ],
 
     'programs_section' => [
-        'index' => 'Programmes & Services',
-        'title' => 'One place for the language,',
-        'title_accent' => 'and for the route out.',
-        'lede' => 'Pick your starting point. Every programme is built to lead into the next stage, so you never have to switch institutions halfway through.',
+        'index' => 'Class Programmes & Certifications',
+        'title' => 'Language Courses &',
+        'title_accent' => 'Certification Tracks.',
+        'lede' => 'From absolute beginner to exam readiness and career placement. Structured curricula with regular mock examinations.',
         'ask' => 'Ask about this programme',
         'fields_title' => 'Work sectors we prepare you for',
     ],
@@ -456,6 +456,7 @@ return [
             'ssw' => 'Tokutei Ginou (SSW)',
             'japanese' => 'Japanese',
             'mandarin' => 'Mandarin',
+            'korean' => 'Korean',
             'english' => 'English',
             'about' => 'About Us',
             'process' => 'How It Works',

@@ -45,7 +45,7 @@ return [
     'nav' => [
         'services' => 'Perkhidmatan',
         'about' => 'Tentang Kami',
-        'programs' => 'Program',
+        'programs' => 'Program Kelas',
         'process' => 'Aliran',
         'journey' => 'Perjalanan',
         'faq' => 'Soalan Lazim',
@@ -186,10 +186,10 @@ return [
     ],
 
     'programs_section' => [
-        'index' => 'Program & Perkhidmatan',
-        'title' => 'Satu tempat untuk bahasanya,',
-        'title_accent' => 'sekali gus laluan keluarnya.',
-        'lede' => 'Pilih titik permulaan anda. Setiap program direka bersambung ke peringkat seterusnya, jadi anda tidak perlu bertukar institusi di pertengahan jalan.',
+        'index' => 'Program Kelas & Pensijilan',
+        'title' => 'Pilihan Program Kelas &',
+        'title_accent' => 'Laluan Pensijilan.',
+        'lede' => 'Dari asas hingga bersedia untuk peperiksaan rasmi antarabangsa dan penempatan kerjaya. Kurikulum berstruktur dengan simulasi peperiksaan berkala.',
         'ask' => 'Tanya tentang program ini',
         'fields_title' => 'Bidang pekerjaan yang kami sediakan',
     ],
@@ -458,6 +458,7 @@ return [
             'ssw' => 'Tokutei Ginou (SSW)',
             'japanese' => 'Bahasa Jepun',
             'mandarin' => 'Bahasa Mandarin',
+            'korean' => 'Bahasa Korea',
             'english' => 'Bahasa Inggeris',
             'about' => 'Tentang Kami',
             'process' => 'Aliran Pembelajaran',

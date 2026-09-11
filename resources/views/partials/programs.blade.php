@@ -2,15 +2,6 @@
     $programs = collect(\App\Support\Content::programs());
     $featured = $programs->firstWhere('featured', true) ?? $programs->first();
     $rest = $programs->reject(fn($p) => $p === $featured)->values();
-
-    $perRow = 3;
-    $normalSpan = 2;
-    $remainder = $rest->count() % $perRow;
-    $wideStart = $remainder ? $rest->count() - $remainder : null;
-    $wideSpan = $remainder ? intdiv(6, $remainder) : $normalSpan;
-
-    // Kelas ditulis literal agar terbaca pemindai Tailwind.
-    $spanClass = [2 => 'lg:col-span-2', 3 => 'lg:col-span-3', 6 => 'lg:col-span-6'];
 @endphp
 
 <section id="program" class="section-pad bg-paper-alt">
@@ -93,51 +84,40 @@
             @endif
         </article>
 
-        {{-- ------- Program lainnya ------- --}}
-        <div data-reveal-group class="mt-5 grid gap-5 md:grid-cols-2 lg:grid-cols-6">
-            @foreach ($rest as $i => $program)
-                @php
-                    $isWide = $wideStart !== null && $i >= $wideStart;
-                    $span = $isWide ? $wideSpan : $normalSpan;
-
-                    // Kartu terakhir melebar penuh di tablet bila jumlahnya ganjil.
-                    $mdFull = $rest->count() % 2 === 1 && $i === $rest->count() - 1;
-                @endphp
-
+        {{-- ------- Program Bahasa Lainnya (4 Bahasa Utama) ------- --}}
+        <div data-reveal-group class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            @foreach ($rest as $program)
                 <article data-reveal
-                    class="card card-hover group flex flex-col p-7 {{ $spanClass[$span] ?? 'lg:col-span-2' }} {{ $mdFull ? 'md:col-span-2 lg:col-span-3' : '' }}">
+                    class="card card-hover group flex flex-col justify-between p-7">
                     <span class="card-rule"></span>
 
-                    <div class="flex items-start justify-between gap-4">
-                        <span
-                            class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-900/[0.04] text-navy-800 transition-colors duration-300 group-hover:bg-navy-900 group-hover:text-gold-400">
-                            <x-icon name="{{ $program['icon'] }}" class="h-[1.35rem] w-[1.35rem]" />
-                        </span>
+                    <div>
+                        <div class="flex items-start justify-between gap-4">
+                            <span
+                                class="flex h-12 w-12 items-center justify-center rounded-xl bg-navy-900/[0.04] text-navy-800 transition-colors duration-300 group-hover:bg-navy-900 group-hover:text-gold-400">
+                                <x-icon name="{{ $program['icon'] }}" class="h-[1.35rem] w-[1.35rem]" />
+                            </span>
 
-                        <span class="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-ink-muted/70">
-                            {{ $program['kicker'] }}
-                        </span>
-                    </div>
+                            <span class="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-ink-muted/70">
+                                {{ $program['kicker'] }}
+                            </span>
+                        </div>
 
-                    {{-- Kartu lebar menaruh daftar poin di samping, bukan di bawah,
-                    supaya tidak menyisakan ruang kosong. --}}
-                    <div class="mt-6 flex flex-1 flex-col {{ $isWide ? 'lg:flex-row lg:gap-8' : '' }}">
-                        <div class="{{ $isWide ? 'lg:flex-1' : '' }}">
-                            <h3 class="font-display text-[1.75rem] font-semibold leading-tight text-navy-900">
+                        <div class="mt-6">
+                            <h3 class="font-display text-2xl font-semibold leading-tight text-navy-900">
                                 {{ $program['title'] }}
                             </h3>
 
-                            <p class="mt-3 text-[0.9375rem] leading-relaxed text-ink-muted">
+                            <p class="mt-3 text-sm leading-relaxed text-ink-muted">
                                 {{ $program['body'] }}
                             </p>
                         </div>
 
-                        <ul
-                            class="mt-6 space-y-2.5 border-t border-navy-900/[0.08] pt-6 {{ $isWide ? 'lg:mt-0 lg:w-56 lg:shrink-0 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0' : '' }}">
+                        <ul class="mt-6 space-y-2.5 border-t border-navy-900/[0.08] pt-5">
                             @foreach ($program['points'] as $point)
-                                <li class="flex items-start gap-2.5 text-sm text-ink-muted">
-                                    <x-icon name="check" class="mt-1 h-3.5 w-3.5 shrink-0 text-gold-600" stroke="2.5" />
-                                    {{ $point }}
+                                <li class="flex items-start gap-2 text-xs md:text-sm text-ink-muted">
+                                    <x-icon name="check" class="mt-0.5 h-3.5 w-3.5 shrink-0 text-gold-600" stroke="2.5" />
+                                    <span>{{ $point }}</span>
                                 </li>
                             @endforeach
                         </ul>
@@ -145,7 +125,7 @@
 
                     <a href="{{ $waUrl(__('site.wa.program', ['program' => $program['title']])) }}" target="_blank"
                         rel="noopener"
-                        class="mt-4 inline-flex min-h-11 items-center gap-2 self-start rounded-full py-3 text-sm font-semibold text-navy-900 transition-colors duration-200 hover:text-gold-700">
+                        class="mt-6 inline-flex min-h-11 items-center gap-2 self-start rounded-full py-2 text-sm font-semibold text-navy-900 transition-colors duration-200 hover:text-gold-700">
                         {{ __('site.programs_section.ask') }}
                         <x-icon name="arrow-right"
                             class="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" stroke="2" />
