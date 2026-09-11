@@ -47,6 +47,20 @@ class Locales
             'html' => 'ja-JP',
             'dir' => 'ltr',
         ],
+        'zh' => [
+            'country' => '中国',
+            'native' => '简体中文',
+            'flag' => 'cn',
+            'html' => 'zh-CN',
+            'dir' => 'ltr',
+        ],
+        'ko' => [
+            'country' => '대한민국',
+            'native' => '한국어',
+            'flag' => 'kr',
+            'html' => 'ko-KR',
+            'dir' => 'ltr',
+        ],
     ];
 
     /** Kode bahasa selain bawaan — dipakai sebagai batasan segmen URL. */
