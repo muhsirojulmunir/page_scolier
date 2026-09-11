@@ -431,7 +431,7 @@ return [
     'cta_section' => [
         'title' => 'There is only one first step:',
         'title_accent' => 'have a chat.',
-        'lede' => 'Tell us your goal and we will help build a realistic study route — timeframe and costs included. No consultation fee.',
+        'lede' => 'Share your plans with us — from studying abroad and career opportunities in Japan (Tokutei Ginou), to foreign language courses. We will help design a realistic roadmap, complete with timeline and cost estimates. Free consultation.',
         'primary' => 'Get a Free Consultation',
         'secondary' => 'View Programmes Again',
         'note' => 'Usually answered during opening hours · :phone',
@@ -448,7 +448,7 @@ return [
     ],
 
     'footer' => [
-        'about' => 'A language school and departure-support service in Surabaya. Japanese, Mandarin and English — until you have genuinely left.',
+        'about' => 'Overseas education consultancy, foreign language training (Japanese, Mandarin, Korean, English), and official career placement in Japan (Tokutei Ginou) in Surabaya.',
         'group_programs' => 'Programmes',
         'group_company' => 'Company',
         'group_visit' => 'Visit',

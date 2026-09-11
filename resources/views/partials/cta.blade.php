@@ -3,7 +3,7 @@
 
     <div class="shell relative py-20 md:py-28">
         <div class="mx-auto max-w-3xl text-center">
-            <x-logo data-reveal class="mx-auto h-24" />
+            <x-logo data-reveal class="mx-auto h-20 md:h-24" :simple="true" />
 
             <h2 data-reveal class="display-2 text-balance-heading mt-8 text-white">
                 {{ __('site.cta_section.title') }}

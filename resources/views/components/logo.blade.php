@@ -1,6 +1,6 @@
 @props([
     'alt' => 'Scolier',
-    'simple' => false,
+    'simple' => true,
 ])
 
 {{--

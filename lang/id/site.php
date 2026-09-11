@@ -432,7 +432,7 @@ return [
     'cta_section' => [
         'title' => 'Langkah pertamanya cuma satu:',
         'title_accent' => 'ngobrol dulu.',
-        'lede' => 'Ceritakan tujuanmu, dan kami bantu susun jalur belajar yang realistis — lengkap dengan perkiraan waktu dan biayanya. Tanpa biaya konsultasi.',
+        'lede' => 'Ceritakan rencana dan impianmu — mulai dari persiapan studi luar negeri, peluang kerja resmi di Jepang (Tokutei Ginou), hingga kursus bahasa asing. Kami bantu rancang langkah yang realistis, lengkap dengan estimasi waktu dan biayanya. Bebas biaya konsultasi.',
         'primary' => 'Konsultasi Gratis Sekarang',
         'secondary' => 'Lihat Program Lagi',
         'note' => 'Biasanya dibalas pada jam operasional · :phone',
@@ -449,7 +449,7 @@ return [
     ],
 
     'footer' => [
-        'about' => 'Lembaga kursus bahasa dan pendampingan keberangkatan di Surabaya. Bahasa Jepang, Mandarin, dan Inggris — sampai kamu benar-benar berangkat.',
+        'about' => 'Konsultan pendidikan luar negeri, kursus bahasa asing (Jepang, Mandarin, Korea, Inggris), dan pendampingan kerja resmi di Jepang (Tokutei Ginou) di Surabaya.',
         'group_programs' => 'Program',
         'group_company' => 'Perusahaan',
         'group_visit' => 'Kunjungi',

@@ -433,7 +433,7 @@ return [
     'cta_section' => [
         'title' => 'Langkah pertamanya hanya satu:',
         'title_accent' => 'berbual dahulu.',
-        'lede' => 'Kongsikan matlamat anda, dan kami bantu susun laluan pembelajaran yang realistik — lengkap dengan anggaran masa dan kosnya. Tanpa bayaran perundingan.',
+        'lede' => 'Kongsikan rancangan dan impian anda — daripada pengajian ke luar negara, peluang kerjaya rasmi di Jepun (Tokutei Ginou), hingga kursus bahasa asing. Kami bantu susun langkah yang realistik, lengkap dengan anggaran masa dan kosnya. Bebas yuran perundingan.',
         'primary' => 'Dapatkan Perundingan Percuma',
         'secondary' => 'Lihat Program Semula',
         'note' => 'Kebiasaannya dibalas dalam waktu operasi · :phone',
@@ -450,7 +450,7 @@ return [
     ],
 
     'footer' => [
-        'about' => 'Pusat kursus bahasa dan bimbingan ke luar negara di Surabaya. Bahasa Jepun, Mandarin dan Inggeris — sehingga anda benar-benar berlepas.',
+        'about' => 'Perunding pendidikan luar negara, kursus bahasa asing (Jepun, Mandarin, Korea, Inggeris), dan bimbingan kerjaya rasmi di Jepun (Tokutei Ginou) di Surabaya.',
         'group_programs' => 'Program',
         'group_company' => 'Syarikat',
         'group_visit' => 'Kunjungi',
