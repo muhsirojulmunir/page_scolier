@@ -77,6 +77,9 @@ return [
             'english' => ['name' => '英語', 'cert' => 'IELTS & TOEFL'],
         ],
         'note' => 'クラスをお選びいただく前に、レベル判定テストを無料で実施します',
+        'qr_label' => 'カメラでスキャン',
+        'qr_sublabel' => 'Scolier コンサルタントに直接つながります',
+
     ],
 
     'stats' => [

@@ -78,6 +78,9 @@ return [
             'english' => ['name' => '영어 강좌', 'cert' => 'IELTS & TOEFL 대비'],
         ],
         'note' => '수강 등록 전 무료 사전 레벨 테스트 제공',
+        'qr_label' => '폰 카메라로 스캔',
+        'qr_sublabel' => 'Scolier 컨설턴트와 바로 연결됩니다',
+
     ],
 
     'stats' => [

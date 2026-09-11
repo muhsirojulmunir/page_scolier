@@ -78,6 +78,9 @@ return [
             'english' => ['name' => '英语课程', 'cert' => '雅思 (IELTS) & 托福 (TOEFL)'],
         ],
         'note' => '报读课程前可享免费水平定位测试',
+        'qr_label' => '手机相机扫一扫',
+        'qr_sublabel' => '直接连线 Scolier 务课顾问',
+
     ],
 
     'stats' => [

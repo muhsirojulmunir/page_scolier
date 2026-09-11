@@ -81,10 +81,10 @@
                     {{-- Jarak & Teks Panduan Proporsional --}}
                     <div class="mt-5 space-y-1.5">
                         <p class="text-sm font-semibold tracking-wide text-white">
-                            Scan via Kamera HP
+                            {{ __('site.hero.qr_label') }}
                         </p>
                         <p class="text-xs leading-relaxed text-white/60">
-                            Langsung terhubung dengan konsultan Scolier
+                            {{ __('site.hero.qr_sublabel') }}
                         </p>
                     </div>
                 </div>

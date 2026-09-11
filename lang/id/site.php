@@ -77,6 +77,9 @@ return [
             'english' => ['name' => 'Bahasa Inggris', 'cert' => 'IELTS & TOEFL'],
         ],
         'note' => 'Tes penempatan gratis sebelum kamu memilih kelas',
+        'qr_label' => 'Scan via Kamera HP',
+        'qr_sublabel' => 'Langsung terhubung dengan konsultan Scolier',
+
     ],
 
     'stats' => [

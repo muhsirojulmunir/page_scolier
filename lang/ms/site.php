@@ -78,6 +78,9 @@ return [
             'english' => ['name' => 'Bahasa Inggeris', 'cert' => 'IELTS & TOEFL'],
         ],
         'note' => 'Ujian penempatan percuma sebelum anda memilih kelas',
+        'qr_label' => 'Imbas dengan kamera telefon',
+        'qr_sublabel' => 'Berhubung terus dengan konsultan Scolier',
+
     ],
 
     'stats' => [

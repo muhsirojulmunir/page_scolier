@@ -76,6 +76,9 @@ return [
             'english' => ['name' => 'English', 'cert' => 'IELTS & TOEFL'],
         ],
         'note' => 'Free placement test before you choose a class',
+        'qr_label' => 'Scan with your phone camera',
+        'qr_sublabel' => 'Chat directly with a Scolier consultant',
+
     ],
 
     'stats' => [
