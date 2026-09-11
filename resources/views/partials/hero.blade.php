@@ -2,10 +2,14 @@
     use App\Support\Content;
 
     $languages = [
-        ['key' => 'japanese', 'glyph' => '日本語',  'size' => 'text-4xl'],
-        ['key' => 'mandarin', 'glyph' => '中文',    'size' => 'text-4xl'],
-        ['key' => 'english',  'glyph' => 'English', 'size' => 'text-3xl'],
+        ['key' => 'japanese', 'glyph' => 'にほんご', 'size' => 'text-3xl'],
+        ['key' => 'mandarin', 'glyph' => '中文',     'size' => 'text-4xl'],
+        ['key' => 'korean',   'glyph' => '한국어',   'size' => 'text-3xl'],
+        ['key' => 'english',  'glyph' => 'English',  'size' => 'text-3xl'],
     ];
+
+    $offsets = [0, 1.5, 0.5, 1.75];
+    $parallaxes = [14, -6, 12, -4];
 @endphp
 
 <section id="beranda" class="surface-navy grain on-dark relative overflow-hidden">
@@ -67,15 +71,15 @@
 
             {{-- ---------------- Kartu bahasa ---------------- --}}
             <div class="hero-perspective lg:col-span-5">
-                <div data-hero-cards class="relative mx-auto flex max-w-md flex-col gap-4 lg:max-w-none">
+                <div data-hero-cards class="relative mx-auto flex max-w-md flex-col gap-3.5 lg:max-w-none">
                     @foreach ($languages as $i => $lang)
                         {{-- Pembungkus menangani parallax guliran (sumbu Y), kartu di
                              dalamnya menangani kemiringan kursor (rotasi + Z). Dipisah
                              supaya keduanya tidak berebut properti transform. --}}
                         <div
                             data-hero-card
-                            data-parallax="{{ [14, -6, 20][$i] }}"
-                            style="margin-left: {{ [0, 1.75, 0.75][$i] }}rem"
+                            data-parallax="{{ $parallaxes[$i] ?? 10 }}"
+                            style="margin-left: {{ $offsets[$i] ?? 0 }}rem"
                         >
                             <article data-tilt class="lang-card">
                                 {{-- Permukaan kaca dipisah ke lapisan sendiri: elemen ber-
@@ -95,7 +99,7 @@
 
                                     <span class="depth-2 min-w-0">
                                         <span class="block truncate font-semibold text-white">
-                                            {{ __("site.hero.languages.{$lang['key']}.name") }}
+                                             {{ __("site.hero.languages.{$lang['key']}.name") }}
                                         </span>
                                         <span class="mt-0.5 block text-sm text-white/55">
                                             {{ __("site.hero.languages.{$lang['key']}.cert") }}
@@ -105,16 +109,6 @@
                             </article>
                         </div>
                     @endforeach
-
-                    {{-- Catatan kecil di bawah tumpukan kartu --}}
-                    <p
-                        data-hero-card
-                        data-parallax="30"
-                        class="mt-2 flex items-center gap-2.5 pl-1 text-xs text-white/60"
-                    >
-                        <x-icon name="sparkle" class="h-3.5 w-3.5 shrink-0 text-gold-400" />
-                        {{ __('site.hero.note') }}
-                    </p>
                 </div>
             </div>
         </div>

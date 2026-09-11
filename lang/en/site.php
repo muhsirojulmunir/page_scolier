@@ -10,10 +10,10 @@
 return [
 
     'meta' => [
-        'title' => 'Scolier — Japanese, Mandarin & English Courses in Surabaya',
-        'description' => 'Scolier guides you from your first language class all the way to departure: Japanese, Mandarin and English courses, the Tokutei Ginou (SSW) programme, and undergraduate or postgraduate study abroad. Ruko Bizhome, Pakuwon City, Surabaya.',
-        'og_description' => 'Japanese, Mandarin & English courses. Specialists in the Tokutei Ginou (SSW) programme and study abroad. Surabaya, Indonesia.',
-        'schema_description' => 'Japanese, Mandarin and English courses, the Tokutei Ginou (SSW) programme, and guidance for undergraduate and postgraduate study abroad.',
+        'title' => 'Scolier — Japanese, Mandarin, Korean & English Courses in Surabaya',
+        'description' => 'Scolier guides you from your first language class all the way to departure: Japanese, Mandarin, Korean and English courses, the Tokutei Ginou (SSW) programme, and undergraduate or postgraduate study abroad. Ruko Bizhome, Pakuwon City, Surabaya.',
+        'og_description' => 'Japanese, Mandarin, Korean & English courses. Specialists in the Tokutei Ginou (SSW) programme and study abroad. Surabaya, Indonesia.',
+        'schema_description' => 'Japanese, Mandarin, Korean and English courses, the Tokutei Ginou (SSW) programme, and guidance for undergraduate and postgraduate study abroad.',
     ],
 
     'brand' => [
@@ -42,7 +42,7 @@ return [
 
     'nav' => [
         'services' => 'Services',
-        'about' => 'About',
+        'about' => 'About Us',
         'programs' => 'Programmes',
         'process' => 'Process',
         'journey' => 'Journey',
@@ -61,7 +61,7 @@ return [
         'title_1' => 'Where Students',
         'title_2' => '',
         'title_accent' => 'Become Global.',
-        'lede' => 'Scolier prepares you from scratch — Japanese, Mandarin and English courses, the :ssw programme, and applications to universities abroad.',
+        'lede' => 'Scolier prepares you from scratch — Japanese, Mandarin, Korean and English courses, the :ssw programme, and applications to universities abroad.',
         'cta_primary' => 'Free Consultation',
         'cta_secondary' => 'View Programmes',
         'assurances' => [
@@ -71,14 +71,15 @@ return [
         ],
         'languages' => [
             'japanese' => ['name' => 'Japanese', 'cert' => 'JLPT N5 – N1'],
-            'mandarin' => ['name' => 'Mandarin', 'cert' => 'HSK 1 – 6'],
+            'mandarin' => ['name' => 'Mandarin', 'cert' => 'HSK 1 – 5'],
+            'korean' => ['name' => 'Korean', 'cert' => 'TOPIK I – II'],
             'english' => ['name' => 'English', 'cert' => 'IELTS & TOEFL'],
         ],
         'note' => 'Free placement test before you choose a class',
     ],
 
     'stats' => [
-        'languages' => ['label' => 'Languages taught', 'sub' => 'Japanese · Mandarin · English'],
+        'languages' => ['label' => 'Languages taught', 'sub' => 'Japanese · Mandarin · Korean · English'],
         'programs'  => ['label' => 'Guided programmes', 'sub' => 'From classroom to departure'],
         'tracks'    => ['label' => 'Routes abroad', 'sub' => 'Degree study & SSW employment'],
         'personal'  => ['label' => 'Personal consultation', 'sub' => 'Mapped to your own goal'],
@@ -87,7 +88,8 @@ return [
     'marquee' => [
         'JLPT N5 – N1',
         'Tokutei Ginou (SSW)',
-        'HSK 1 – 6',
+        'HSK 1 – 5',
+        'TOPIK I – II',
         'IELTS',
         'Kaigo — Elderly Care',
         'TOEFL iBT',
@@ -110,10 +112,10 @@ return [
                 'badge' => 'Formal Study',
                 'title' => 'Study Overseas',
                 'subtitle' => 'Schools & Universities Abroad',
-                'desc' => 'Comprehensive information and official guidance for admissions into schools and universities worldwide.',
+                'desc' => 'Comprehensive information and official guidance for admissions into schools and universities worldwide, including accommodation and housing assistance.',
                 'highlights' => [
                     'University & Major Advisory',
-                    'Document & Student Visa Assistance',
+                    'Accommodation & Student Visa',
                 ],
                 'wa_text' => 'Hello Scolier, I would like to consult about the Study Overseas programme.',
             ],
@@ -134,8 +136,8 @@ return [
                 'subtitle' => 'Certified Curriculum',
                 'desc' => 'Intensive language courses with certified tutors and exam-focused curriculum for international standards.',
                 'highlights' => [
-                    'English & Japanese',
-                    'Mandarin, Korean & more',
+                    'Japanese & Korean',
+                    'Mandarin & English',
                 ],
                 'wa_text' => 'Hello Scolier, I would like to consult about Foreign Language Courses (English, Japanese, Mandarin, Korean, etc).',
             ],
@@ -211,7 +213,13 @@ return [
             'kicker' => 'Language Course',
             'title' => 'Mandarin',
             'body' => 'Command of pinyin, hanzi and accurate tones, aimed at HSK certification and business communication.',
-            'points' => ['HSK levels 1 to 6', 'Intensive pronunciation & tones', 'Mandarin for the workplace'],
+            'points' => ['HSK levels 1 to 5', 'Intensive pronunciation & tones', 'Mandarin for the workplace'],
+        ],
+        'korean' => [
+            'kicker' => 'Language Course',
+            'title' => 'Korean',
+            'body' => 'Mastering Hangeul, practical everyday conversations, and systematic preparation for TOPIK certification for study or career.',
+            'points' => ['TOPIK levels I & II', 'Daily & business conversation', 'Mock tests & exam strategy'],
         ],
         'english' => [
             'kicker' => 'Language Course',
@@ -222,8 +230,8 @@ return [
         'study' => [
             'kicker' => 'Consultation',
             'title' => 'Undergraduate & Postgraduate Study Abroad',
-            'body' => 'Building a shortlist of universities and fields of study that are realistic for your academic record and your budget.',
-            'points' => ['Choosing university & course', 'Essays & motivation letters', 'Scholarship route guidance'],
+            'body' => 'Building a shortlist of universities and fields of study that are realistic for your academic record and budget, complete with accommodation assistance.',
+            'points' => ['Choosing university & course', 'Essays & scholarship routes', 'Accommodation & visa support'],
         ],
         'visa' => [
             'kicker' => 'Support',

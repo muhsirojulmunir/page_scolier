@@ -64,8 +64,8 @@ return [
     | Label & keterangannya ada di lang/{locale}/site.php -> stats
     */
     'stats' => [
-        ['key' => 'languages', 'value' => 3, 'suffix' => ''],
-        ['key' => 'programs',  'value' => 6, 'suffix' => ''],
+        ['key' => 'languages', 'value' => 4, 'suffix' => ''],
+        ['key' => 'programs',  'value' => 7, 'suffix' => ''],
         ['key' => 'tracks',    'value' => 2, 'suffix' => ''],
         ['key' => 'personal',  'value' => 1, 'suffix' => ':1'],
     ],
@@ -105,6 +105,7 @@ return [
         ],
         ['key' => 'japanese', 'icon' => 'torii',    'featured' => false],
         ['key' => 'mandarin', 'icon' => 'lantern',  'featured' => false],
+        ['key' => 'korean',   'icon' => 'chat',     'featured' => false],
         ['key' => 'english',  'icon' => 'chat',     'featured' => false],
         ['key' => 'study',    'icon' => 'building', 'featured' => false],
         ['key' => 'visa',     'icon' => 'document', 'featured' => false],

@@ -12,10 +12,10 @@
 return [
 
     'meta' => [
-        'title' => 'Scolier — Kursus Bahasa Jepun, Mandarin & Inggeris di Surabaya',
-        'description' => 'Scolier membimbing anda dari kelas bahasa sehingga hari berlepas: kursus Bahasa Jepun, Mandarin dan Inggeris, program Tokutei Ginou (SSW), serta pengajian ijazah dan sarjana di luar negara. Ruko Bizhome, Pakuwon City, Surabaya.',
-        'og_description' => 'Kursus Bahasa Jepun, Mandarin & Inggeris. Pakar program Tokutei Ginou (SSW) dan pengajian di luar negara. Surabaya, Indonesia.',
-        'schema_description' => 'Kursus Bahasa Jepun, Mandarin dan Inggeris, program Tokutei Ginou (SSW), serta bimbingan pengajian ijazah dan sarjana di luar negara.',
+        'title' => 'Scolier — Kursus Bahasa Jepun, Mandarin, Korea & Inggeris di Surabaya',
+        'description' => 'Scolier membimbing anda dari kelas bahasa sehingga hari berlepas: kursus Bahasa Jepun, Mandarin, Korea dan Inggeris, program Tokutei Ginou (SSW), serta pengajian ijazah dan sarjana di luar negara. Ruko Bizhome, Pakuwon City, Surabaya.',
+        'og_description' => 'Kursus Bahasa Jepun, Mandarin, Korea & Inggeris. Pakar program Tokutei Ginou (SSW) dan pengajian di luar negara. Surabaya, Indonesia.',
+        'schema_description' => 'Kursus Bahasa Jepun, Mandarin, Korea dan Inggeris, program Tokutei Ginou (SSW), serta bimbingan pengajian ijazah dan sarjana di luar negara.',
     ],
 
     'brand' => [
@@ -44,7 +44,7 @@ return [
 
     'nav' => [
         'services' => 'Perkhidmatan',
-        'about' => 'Tentang',
+        'about' => 'Tentang Kami',
         'programs' => 'Program',
         'process' => 'Aliran',
         'journey' => 'Perjalanan',
@@ -60,10 +60,10 @@ return [
 
     'hero' => [
         'badge' => 'Perunding Pendidikan · Surabaya',
-        'title_1' => 'Capai impian anda',
-        'title_2' => 'belajar & berkerjaya',
-        'title_accent' => 'di luar negara.',
-        'lede' => 'Scolier menyediakan anda dari mula — kursus Bahasa Jepun, Mandarin dan Inggeris, program :ssw, sehingga permohonan ke universiti di luar negara.',
+        'title_1' => 'Where Students',
+        'title_2' => '',
+        'title_accent' => 'Become Global.',
+        'lede' => 'Scolier menyediakan anda dari mula — kursus Bahasa Jepun, Mandarin, Korea dan Inggeris, program :ssw, sehingga permohonan ke universiti di luar negara.',
         'cta_primary' => 'Perundingan Percuma',
         'cta_secondary' => 'Lihat Program',
         'assurances' => [
@@ -73,14 +73,15 @@ return [
         ],
         'languages' => [
             'japanese' => ['name' => 'Bahasa Jepun', 'cert' => 'JLPT N5 – N1'],
-            'mandarin' => ['name' => 'Bahasa Mandarin', 'cert' => 'HSK 1 – 6'],
+            'mandarin' => ['name' => 'Bahasa Mandarin', 'cert' => 'HSK 1 – 5'],
+            'korean' => ['name' => 'Bahasa Korea', 'cert' => 'TOPIK I – II'],
             'english' => ['name' => 'Bahasa Inggeris', 'cert' => 'IELTS & TOEFL'],
         ],
         'note' => 'Ujian penempatan percuma sebelum anda memilih kelas',
     ],
 
     'stats' => [
-        'languages' => ['label' => 'Bahasa yang diajar', 'sub' => 'Jepun · Mandarin · Inggeris'],
+        'languages' => ['label' => 'Bahasa yang diajar', 'sub' => 'Jepun · Mandarin · Korea · Inggeris'],
         'programs'  => ['label' => 'Program bimbingan', 'sub' => 'Dari kelas hingga hari berlepas'],
         'tracks'    => ['label' => 'Laluan ke luar negara', 'sub' => 'Pengajian ijazah & pekerjaan SSW'],
         'personal'  => ['label' => 'Perundingan peribadi', 'sub' => 'Dirancang mengikut matlamat anda'],
@@ -89,7 +90,8 @@ return [
     'marquee' => [
         'JLPT N5 – N1',
         'Tokutei Ginou (SSW)',
-        'HSK 1 – 6',
+        'HSK 1 – 5',
+        'TOPIK I – II',
         'IELTS',
         'Kaigo — Penjagaan Warga Emas',
         'TOEFL iBT',
@@ -112,10 +114,10 @@ return [
                 'badge' => 'Pengajian Formal',
                 'title' => 'Study Overseas',
                 'subtitle' => 'Sekolah & Universiti Luar Negara',
-                'desc' => 'Maklumat lengkap dan bimbingan rasmi urusan kemasukan sekolah hingga universiti di luar negara.',
+                'desc' => 'Maklumat lengkap dan bimbingan rasmi urusan kemasukan sekolah hingga universiti di luar negara, termasuk pengurusan tempat tinggal & penginapan.',
                 'highlights' => [
                     'Konsultasi Jurusan & Kampus',
-                    'Pengurusan Dokumen & Visa Pelajar',
+                    'Tempat Tinggal & Visa Pelajar',
                 ],
                 'wa_text' => 'Salam Scolier, saya ingin mendapatkan konsultasi mengenai program Study Overseas.',
             ],
@@ -136,8 +138,8 @@ return [
                 'subtitle' => 'Foreign Language Courses',
                 'desc' => 'Latihan bahasa asing intensif bertaraf antarabangsa bersama pengajar bertauliah dan kurikulum berasaskan peperiksaan.',
                 'highlights' => [
-                    'Inggeris & Jepun',
-                    'Mandarin, Korea dan lain-lain',
+                    'Jepun & Korea',
+                    'Mandarin & Inggeris',
                 ],
                 'wa_text' => 'Salam Scolier, saya ingin mendapatkan konsultasi mengenai Kursus Bahasa Asing.',
             ],
@@ -213,7 +215,13 @@ return [
             'kicker' => 'Kursus Bahasa',
             'title' => 'Bahasa Mandarin',
             'body' => 'Penguasaan pinyin, hanzi dan nada yang tepat, dihalakan kepada pensijilan HSK dan komunikasi perniagaan.',
-            'points' => ['Tahap HSK 1 hingga 6', 'Sebutan & nada secara intensif', 'Mandarin untuk dunia pekerjaan'],
+            'points' => ['Tahap HSK 1 hingga 5', 'Sebutan & nada secara intensif', 'Mandarin untuk dunia pekerjaan'],
+        ],
+        'korean' => [
+            'kicker' => 'Kursus Bahasa',
+            'title' => 'Bahasa Korea',
+            'body' => 'Pembelajaran dari huruf Hangeul, tatabahasa asas hingga lanjutan, serta persediaan peperiksaan TOPIK untuk pengajian mahupun kerjaya di Korea.',
+            'points' => ['Tahap TOPIK I & II', 'Perbualan harian & perniagaan', 'Simulasi peperiksaan berkala'],
         ],
         'english' => [
             'kicker' => 'Kursus Bahasa',
@@ -224,8 +232,8 @@ return [
         'study' => [
             'kicker' => 'Perundingan',
             'title' => 'Pengajian Ijazah & Sarjana di Luar Negara',
-            'body' => 'Menyusun senarai universiti dan bidang pengajian yang realistik dengan rekod akademik serta bajet anda.',
-            'points' => ['Pemilihan universiti & bidang', 'Penyediaan esei & surat motivasi', 'Maklumat laluan biasiswa'],
+            'body' => 'Menyusun senarai universiti dan bidang pengajian yang realistik dengan rekod akademik serta bajet anda, lengkap dengan bantuan pengurusan tempat tinggal.',
+            'points' => ['Pemilihan universiti & bidang', 'Penyediaan esei & biasiswa', 'Bantuan tempat tinggal & visa'],
         ],
         'visa' => [
             'kicker' => 'Bimbingan',

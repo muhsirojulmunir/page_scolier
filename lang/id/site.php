@@ -11,10 +11,10 @@
 return [
 
     'meta' => [
-        'title' => 'Scolier — Kursus Bahasa Jepang, Mandarin & Inggris di Surabaya',
-        'description' => 'Scolier mendampingi kamu dari kelas bahasa sampai keberangkatan: kursus Bahasa Jepang, Mandarin, dan Inggris, program Tokutei Ginou (SSW), serta studi S1/S2 di luar negeri. Ruko Bizhome, Pakuwon City, Surabaya.',
-        'og_description' => 'Kursus Bahasa Jepang, Mandarin & Inggris. Spesialis program Tokutei Ginou (SSW) dan studi S1/S2 luar negeri. Surabaya.',
-        'schema_description' => 'Kursus Bahasa Jepang, Mandarin, dan Inggris, program Tokutei Ginou (SSW), serta pendampingan studi S1/S2 di luar negeri.',
+        'title' => 'Scolier — Kursus Bahasa Jepang, Mandarin, Korea & Inggris di Surabaya',
+        'description' => 'Scolier mendampingi kamu dari kelas bahasa sampai keberangkatan: kursus Bahasa Jepang, Mandarin, Korea, dan Inggris, program Tokutei Ginou (SSW), serta studi S1/S2 di luar negeri. Ruko Bizhome, Pakuwon City, Surabaya.',
+        'og_description' => 'Kursus Bahasa Jepang, Mandarin, Korea & Inggris. Spesialis program Tokutei Ginou (SSW) dan studi S1/S2 luar negeri. Surabaya.',
+        'schema_description' => 'Kursus Bahasa Jepang, Mandarin, Korea, dan Inggris, program Tokutei Ginou (SSW), serta pendampingan studi S1/S2 di luar negeri.',
     ],
 
     'brand' => [
@@ -43,7 +43,7 @@ return [
 
     'nav' => [
         'services' => 'Layanan',
-        'about' => 'Tentang',
+        'about' => 'Tentang Kami',
         'programs' => 'Program',
         'process' => 'Alur',
         'journey' => 'Perjalanan',
@@ -62,7 +62,7 @@ return [
         'title_1' => 'Where Students',
         'title_2' => '',
         'title_accent' => 'Become Global.',
-        'lede' => 'Scolier menyiapkanmu dari nol — kursus Bahasa Jepang, Mandarin, dan Inggris, program :ssw, hingga pendaftaran S1/S2 di kampus luar negeri.',
+        'lede' => 'Scolier menyiapkanmu dari nol — kursus Bahasa Jepang, Mandarin, Korea, dan Inggris, program :ssw, hingga pendaftaran S1/S2 di kampus luar negeri.',
         'cta_primary' => 'Konsultasi Gratis',
         'cta_secondary' => 'Lihat Program',
         'assurances' => [
@@ -72,14 +72,15 @@ return [
         ],
         'languages' => [
             'japanese' => ['name' => 'Bahasa Jepang', 'cert' => 'JLPT N5 – N1'],
-            'mandarin' => ['name' => 'Bahasa Mandarin', 'cert' => 'HSK 1 – 6'],
+            'mandarin' => ['name' => 'Bahasa Mandarin', 'cert' => 'HSK 1 – 5'],
+            'korean' => ['name' => 'Bahasa Korea', 'cert' => 'TOPIK I – II'],
             'english' => ['name' => 'Bahasa Inggris', 'cert' => 'IELTS & TOEFL'],
         ],
         'note' => 'Tes penempatan gratis sebelum kamu memilih kelas',
     ],
 
     'stats' => [
-        'languages' => ['label' => 'Bahasa yang diajarkan', 'sub' => 'Jepang · Mandarin · Inggris'],
+        'languages' => ['label' => 'Bahasa yang diajarkan', 'sub' => 'Jepang · Mandarin · Korea · Inggris'],
         'programs'  => ['label' => 'Program pendampingan', 'sub' => 'Dari kelas sampai keberangkatan'],
         'tracks'    => ['label' => 'Jalur keberangkatan', 'sub' => 'Studi S1/S2 & kerja SSW'],
         'personal'  => ['label' => 'Konsultasi personal', 'sub' => 'Dipetakan sesuai tujuanmu'],
@@ -88,7 +89,8 @@ return [
     'marquee' => [
         'JLPT N5 – N1',
         'Tokutei Ginou (SSW)',
-        'HSK 1 – 6',
+        'HSK 1 – 5',
+        'TOPIK I – II',
         'IELTS',
         'Kaigo — Perawatan Lansia',
         'TOEFL iBT',
@@ -111,10 +113,10 @@ return [
                 'badge' => 'Studi Formal',
                 'title' => 'Study Overseas',
                 'subtitle' => 'Sekolah & Kuliah Luar Negeri',
-                'desc' => 'Informasi lengkap dan pendampingan resmi pengurusan pendaftaran sekolah hingga universitas di luar negeri.',
+                'desc' => 'Informasi lengkap dan pendampingan resmi pendaftaran sekolah hingga universitas di luar negeri, termasuk pengurusan akomodasi & tempat tinggal.',
                 'highlights' => [
                     'Konsultasi Jurusan & Kampus',
-                    'Pengurusan Berkas & Visa Pelajar',
+                    'Akomodasi & Visa Pelajar',
                 ],
                 'wa_text' => 'Halo Scolier, saya ingin konsultasi mengenai program Study Overseas (sekolah/kuliah di luar negeri).',
             ],
@@ -135,8 +137,8 @@ return [
                 'subtitle' => 'Kelas Intensif & Persiapan Ujian',
                 'desc' => 'Pelatihan bahasa asing intensif berstandar internasional bersama pengajar bersertifikasi dan kurikulum berbasis ujian.',
                 'highlights' => [
-                    'Inggris & Jepang',
-                    'Mandarin, Korea, dan lainnya',
+                    'Jepang & Korea',
+                    'Mandarin & Inggris',
                 ],
                 'wa_text' => 'Halo Scolier, saya ingin konsultasi mengenai Kursus Bahasa Asing (Inggris, Jepang, Mandarin, Korea, dll).',
             ],
@@ -212,7 +214,13 @@ return [
             'kicker' => 'Kursus Bahasa',
             'title' => 'Bahasa Mandarin',
             'body' => 'Penguasaan pinyin, hanzi, dan nada yang tepat, diarahkan untuk sertifikasi HSK dan komunikasi bisnis.',
-            'points' => ['Level HSK 1 sampai 6', 'Pelafalan & nada intensif', 'Mandarin untuk dunia kerja'],
+            'points' => ['Level HSK 1 sampai 5', 'Pelafalan & nada intensif', 'Mandarin untuk dunia kerja'],
+        ],
+        'korean' => [
+            'kicker' => 'Kursus Bahasa',
+            'title' => 'Bahasa Korea',
+            'body' => 'Pembelajaran dari huruf Hangeul, tata bahasa dasar hingga mahir, serta persiapan ujian TOPIK untuk studi maupun karier di Korea.',
+            'points' => ['Level TOPIK I & II', 'Percakapan sehari-hari & bisnis', 'Simulasi ujian berkala'],
         ],
         'english' => [
             'kicker' => 'Kursus Bahasa',
@@ -223,8 +231,8 @@ return [
         'study' => [
             'kicker' => 'Konsultasi',
             'title' => 'Studi S1 & S2 Luar Negeri',
-            'body' => 'Menyusun pilihan kampus dan bidang studi yang realistis terhadap latar belakang akademik serta anggaranmu.',
-            'points' => ['Pemilihan kampus & jurusan', 'Penyusunan esai & motivation letter', 'Informasi jalur beasiswa'],
+            'body' => 'Menyusun pilihan kampus dan bidang studi yang realistis terhadap latar belakang akademik serta anggaranmu, lengkap dengan bantuan pengurusan akomodasi.',
+            'points' => ['Pemilihan kampus & jurusan', 'Penyusunan esai & beasiswa', 'Bantuan akomodasi & visa'],
         ],
         'visa' => [
             'kicker' => 'Pendampingan',
