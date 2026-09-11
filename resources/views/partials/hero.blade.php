@@ -47,34 +47,34 @@
                     </a>
                 </div>
 
-                {{-- Mini QR Code Card untuk Laptop / Komputer --}}
-                <div class="hidden sm:flex items-center gap-3 rounded-2xl border border-white/15 bg-white/[0.04] p-2.5 pr-4 backdrop-blur-sm transition-all duration-300 hover:border-gold-400/40 hover:bg-white/[0.07]">
+                {{-- QR Code Card (Tampil di Laptop & HP, Ukuran Lebih Besar & Mudah di-Scan) --}}
+                <div class="flex w-fit items-center gap-3.5 rounded-2xl border border-white/15 bg-white/[0.05] p-2.5 pr-4 backdrop-blur-md transition-all duration-300 hover:border-gold-400/50 hover:bg-white/[0.08] shadow-lg">
                     <a
                         href="{{ $waUrl() }}"
                         target="_blank"
                         rel="noopener"
-                        title="Scan atau klik untuk chat WhatsApp Scolier"
-                        class="group shrink-0"
+                        title="Scan atau ketuk untuk chat WhatsApp Scolier"
+                        class="group relative shrink-0"
                     >
                         <img
                             src="{{ asset('img/barcode-wa.jpeg') }}"
                             alt="QR Code WhatsApp Scolier"
-                            width="52"
-                            height="52"
-                            class="h-[3.25rem] w-[3.25rem] rounded-xl bg-white p-1 shadow-md transition-transform duration-200 group-hover:scale-105"
+                            width="80"
+                            height="80"
+                            class="h-16 w-16 sm:h-20 sm:w-20 rounded-xl bg-white p-1.5 shadow-md transition-transform duration-200 group-hover:scale-105"
                         />
                     </a>
                     <div class="text-left">
-                        <span class="flex items-center gap-1.5 text-[0.7rem] font-semibold uppercase tracking-wider text-gold-400">
-                            <span class="relative flex h-1.5 w-1.5">
+                        <span class="flex items-center gap-1.5 text-[0.72rem] font-semibold uppercase tracking-wider text-gold-400">
+                            <span class="relative flex h-2 w-2">
                                 <span class="absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75 motion-safe:animate-ping"></span>
-                                <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-gold-400"></span>
+                                <span class="relative inline-flex h-2 w-2 rounded-full bg-gold-400"></span>
                             </span>
                             Scan QR WhatsApp
                         </span>
-                        <span class="mt-0.5 block text-xs text-white/75">
-                            Buka di laptop? Scan via HP
-                        </span>
+                        <p class="mt-1 text-xs leading-relaxed text-white/80">
+                            Arahkan kamera HP<br class="hidden sm:inline"> atau ketuk untuk chat
+                        </p>
                     </div>
                 </div>
             </div>
