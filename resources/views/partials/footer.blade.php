@@ -12,8 +12,8 @@
             ['label' => __('site.footer.links.english'),  'href' => '#program'],
         ],
         __('site.footer.group_company') => [
-            ['label' => __('site.nav.services'),         'href' => '#layanan'],
             ['label' => __('site.footer.links.about'),   'href' => '#tentang'],
+            ['label' => __('site.nav.services'),         'href' => '#layanan'],
             ['label' => __('site.footer.links.process'), 'href' => '#alur'],
             ['label' => __('site.footer.links.faq'),     'href' => '#faq'],
             ['label' => __('site.footer.links.contact'), 'href' => '#kontak'],

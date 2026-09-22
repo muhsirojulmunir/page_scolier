@@ -25,7 +25,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="{{ str_replace('-', '_', $meta['html']) }}">
     <meta property="og:site_name" content="{{ config('scolier.brand.name') }}">
-    <meta property="og:title" content="@yield('title', __('site.meta.title'))">
+    <meta property="og:title" content="{{ trim($__env->yieldContent('title', __('site.meta.title'))) }}">
     <meta property="og:description" content="{{ __('site.meta.og_description') }}">
     <meta property="og:url" content="{{ Locales::url($locale) }}">
     <meta property="og:image" content="{{ asset('img/og-image.png') }}">

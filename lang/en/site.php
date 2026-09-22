@@ -10,7 +10,7 @@
 return [
 
     'meta' => [
-        'title' => 'Scolier — Where Students Become Global',
+        'title' => 'Scolier — "Where Students Become Global"',
 
         'description' => 'Scolier guides you from your first language class all the way to departure: Japanese, Mandarin, Korean and English courses, the Tokutei Ginou (SSW) programme, and undergraduate or postgraduate study abroad. Ruko Bizhome, Pakuwon City, Surabaya.',
         'og_description' => 'Japanese, Mandarin, Korean & English courses. Specialists in the Tokutei Ginou (SSW) programme and study abroad. Surabaya, Indonesia.',

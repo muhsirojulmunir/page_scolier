@@ -11,7 +11,7 @@
 return [
 
     'meta' => [
-        'title' => 'Scolier — Where Students Become Global',
+        'title' => 'Scolier — "Where Students Become Global"',
 
         'description' => 'Scolier는 첫 어학 수업부터 해외 출국하는 그날까지 함께합니다. 일본어·중국어·한국어·영어 정규 강좌, 일본 특정기능(SSW) 비자 취업 프로그램, 학사 및 석사 해외 유학 전문 수속 지원. 인도네시아 수라바야 Pakuwon City Ruko Bizhome.',
         'og_description' => '일본어·중국어·한국어·영어 전문 어학원. 일본 특정기능(SSW) 취업 및 해외 학사·석사 유학 수속 전문. 인도네시아 수라바야.',

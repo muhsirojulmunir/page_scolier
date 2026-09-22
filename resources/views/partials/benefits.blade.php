@@ -22,7 +22,7 @@
             @foreach ($benefits as $b)
                 <article
                     data-reveal
-                    class="card card-hover group flex flex-col justify-between p-8 md:p-10"
+                    class="card card-hover group flex flex-col justify-between p-6 sm:p-8 md:p-10"
                 >
                     <span class="card-rule"></span>
 
@@ -55,13 +55,13 @@
                             {{ $b['desc'] ?? '' }}
                         </p>
 
-                        {{-- Poin-poin Keunggulan (Grid 2 Kolom di dalam Kartu) --}}
+                        {{-- Poin-poin Keunggulan (Grid 2 Kolom di dalam Kartu: 2x2 di mobile & desktop) --}}
                         @if (!empty($b['highlights']))
-                            <ul class="mt-6 grid gap-3 sm:grid-cols-2 border-t border-navy-900/10 pt-5">
+                            <ul class="mt-6 grid grid-cols-2 gap-2 sm:gap-3 border-t border-navy-900/10 pt-5">
                                 @foreach ($b['highlights'] as $highlight)
-                                    <li class="flex items-center gap-2.5 text-xs md:text-sm font-medium text-navy-900/85">
-                                        <x-icon name="check" class="h-4 w-4 text-gold-600 shrink-0" stroke="2.2" />
-                                        <span>{{ $highlight }}</span>
+                                    <li class="flex items-center gap-1.5 sm:gap-2.5 text-xs md:text-sm font-medium text-navy-900/85">
+                                        <x-icon name="check" class="h-3.5 w-3.5 sm:h-4 sm:w-4 text-gold-600 shrink-0" stroke="2.2" />
+                                        <span class="leading-tight">{{ $highlight }}</span>
                                     </li>
                                 @endforeach
                             </ul>

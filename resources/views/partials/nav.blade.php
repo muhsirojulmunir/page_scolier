@@ -1,7 +1,7 @@
 @php
     $links = [
-        ['href' => '#layanan',     'label' => __('site.nav.services')],
         ['href' => '#tentang',     'label' => __('site.nav.about')],
+        ['href' => '#layanan',     'label' => __('site.nav.services')],
         ['href' => '#program',     'label' => __('site.nav.programs')],
         ['href' => '#alur',        'label' => __('site.nav.process')],
         ['href' => '#perjalanan',  'label' => __('site.nav.journey')],
