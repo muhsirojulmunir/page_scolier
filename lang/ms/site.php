@@ -14,7 +14,7 @@ return [
     'meta' => [
         'title' => 'Scolier — "Where Students Become Global"',
 
-        'description' => 'Scolier membimbing anda dari kelas bahasa sehingga hari berlepas: kursus Bahasa Jepun, Mandarin, Korea dan Inggeris, program Tokutei Ginou (SSW), serta pengajian ijazah dan sarjana di luar negara. Ruko Bizhome, Pakuwon City, Surabaya.',
+        'description' => 'Scolier membimbing anda dari kelas bahasa sehingga hari berlepas: kursus Bahasa Jepun, Mandarin, Korea dan Inggeris, program Tokutei Ginou (SSW), serta pengajian ijazah dan sarjana di luar negara. Ruko Bizhome RL6-61, Pakuwon City, Surabaya.',
         'og_description' => 'Kursus Bahasa Jepun, Mandarin, Korea & Inggeris. Pakar program Tokutei Ginou (SSW) dan pengajian di luar negara. Surabaya, Indonesia.',
         'schema_description' => 'Kursus Bahasa Jepun, Mandarin, Korea dan Inggeris, program Tokutei Ginou (SSW), serta bimbingan pengajian ijazah dan sarjana di luar negara.',
     ],
@@ -406,7 +406,7 @@ return [
         ],
         'format' => [
             'q' => 'Kelasnya bersemuka atau dalam talian?',
-            'a' => 'Kedua-duanya tersedia. Kelas bersemuka diadakan di pejabat kami di Ruko Bizhome, Pakuwon City, Surabaya. Bagi peserta di luar bandar, tersedia kelas dalam talian dengan bahan dan bimbingan yang sama.',
+            'a' => 'Kedua-duanya tersedia. Kelas bersemuka diadakan di pejabat kami di Ruko Bizhome RL6-61, Pakuwon City, Surabaya. Bagi peserta di luar bandar, tersedia kelas dalam talian dengan bahan dan bimbingan yang sama.',
         ],
         'campus' => [
             'q' => 'Adakah Scolier turut membantu permohonan universiti dan biasiswa?',

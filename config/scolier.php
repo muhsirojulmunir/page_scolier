@@ -25,9 +25,9 @@ return [
         'whatsapp_display' => '+62 822-4500-3028',
         'whatsapp'         => '6282245003028',
 
-        'address_line'  => 'Ruko Bizhome, Pakuwon City Residence RL6-61',
-        'address_city'  => 'Surabaya, Jawa Timur',
-        'maps_query'    => 'Ruko Bizhome Pakuwon City Residence RL6-61 Surabaya',
+        'address_line'  => 'Ruko Bizhome RL6-61, Pakuwon City',
+        'address_city'  => 'Surabaya, Jawa Timur, Indonesia',
+        'maps_query'    => 'Ruko Bizhome RL6-61 Pakuwon City Surabaya',
 
         /*
         |----------------------------------------------------------------

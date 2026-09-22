@@ -26,7 +26,7 @@
         <div class="grid gap-12 md:grid-cols-12">
 
             {{-- Identitas --}}
-            <div class="md:col-span-5">
+            <div class="md:col-span-4">
                 {{-- Logo ringkas (tanpa tagline) — sama dengan yang di navbar --}}
                 <x-logo class="h-14 md:h-16" :simple="true" />
 
@@ -69,37 +69,62 @@
                 </nav>
             @endforeach
 
-            {{-- Kontak --}}
-            <div class="md:col-span-3">
+            {{-- Kontak & Barcode --}}
+            <div class="md:col-span-4">
                 <h2 class="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-gold-400">
                     {{ __('site.footer.group_visit') }}
                 </h2>
 
-                <address class="mt-5 space-y-4 not-italic">
-                    <a
-                        href="{{ $mapsUrl }}"
-                        target="_blank"
-                        rel="noopener"
-                        class="block py-1 text-sm leading-relaxed text-white/60 transition-colors duration-200 hover:text-white"
-                    >
-                        {{ $c['address_line'] }}<br>
-                        {{ $c['address_city'] }}
-                    </a>
-
-                    <a
-                        href="{{ $waUrl() }}"
-                        target="_blank"
-                        rel="noopener"
-                        class="block py-1 text-sm font-semibold text-white transition-colors duration-200 hover:text-gold-400"
-                    >{{ $c['whatsapp_display'] }}</a>
-
-                    @if (! empty($c['email']))
+                <div class="mt-5 flex items-start justify-between gap-4">
+                    <address class="space-y-3 not-italic min-w-0 flex-1">
                         <a
-                            href="mailto:{{ $c['email'] }}"
-                            class="block py-1 text-sm text-white/60 transition-colors duration-200 hover:text-white"
-                        >{{ $c['email'] }}</a>
-                    @endif
-                </address>
+                            href="{{ $mapsUrl }}"
+                            target="_blank"
+                            rel="noopener"
+                            class="block text-sm leading-relaxed text-white/70 transition-colors duration-200 hover:text-white"
+                        >
+                            <span class="font-semibold text-white">Ruko Bizhome RL6-61</span><br>
+                            <span>Pakuwon City, Surabaya</span><br>
+                            <span>Jawa Timur, Indonesia</span>
+                        </a>
+
+                        <a
+                            href="{{ $waUrl() }}"
+                            target="_blank"
+                            rel="noopener"
+                            class="inline-block font-display text-base font-bold text-gold-400 transition-colors duration-200 hover:text-gold-300"
+                        >{{ $c['whatsapp_display'] }}</a>
+
+                        @if (! empty($c['email']))
+                            <a
+                                href="mailto:{{ $c['email'] }}"
+                                class="block text-xs text-white/50 transition-colors duration-200 hover:text-white truncate"
+                            >{{ $c['email'] }}</a>
+                        @endif
+                    </address>
+
+                    {{-- Barcode / QR Code WhatsApp --}}
+                    <div class="shrink-0 flex flex-col items-center">
+                        <a
+                            href="{{ $waUrl() }}"
+                            target="_blank"
+                            rel="noopener"
+                            title="{{ __('site.hero.qr_sublabel') }}"
+                            class="group relative block rounded-2xl bg-white p-2 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-gold-500/20"
+                        >
+                            <img
+                                src="{{ asset('img/barcode-wa.jpeg') }}"
+                                alt="QR Code WhatsApp Scolier"
+                                width="100"
+                                height="100"
+                                class="h-20 w-20 sm:h-24 sm:w-24 object-contain rounded-xl"
+                            />
+                        </a>
+                        <span class="mt-1.5 text-[0.65rem] font-medium tracking-wide text-white/60 text-center">
+                            {{ __('site.hero.qr_label') }}
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
 

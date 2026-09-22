@@ -12,7 +12,7 @@ return [
     'meta' => [
         'title' => 'Scolier — "Where Students Become Global"',
 
-        'description' => 'Scolier guides you from your first language class all the way to departure: Japanese, Mandarin, Korean and English courses, the Tokutei Ginou (SSW) programme, and undergraduate or postgraduate study abroad. Ruko Bizhome, Pakuwon City, Surabaya.',
+        'description' => 'Scolier guides you from your first language class all the way to departure: Japanese, Mandarin, Korean and English courses, the Tokutei Ginou (SSW) programme, and undergraduate or postgraduate study abroad. Ruko Bizhome RL6-61, Pakuwon City, Surabaya.',
         'og_description' => 'Japanese, Mandarin, Korean & English courses. Specialists in the Tokutei Ginou (SSW) programme and study abroad. Surabaya, Indonesia.',
         'schema_description' => 'Japanese, Mandarin, Korean and English courses, the Tokutei Ginou (SSW) programme, and guidance for undergraduate and postgraduate study abroad.',
     ],
@@ -404,7 +404,7 @@ return [
         ],
         'format' => [
             'q' => 'Are classes in person or online?',
-            'a' => 'Both are available. In-person classes are held at our office at Ruko Bizhome, Pakuwon City, Surabaya. For students outside the city, online classes run with the same material and the same support.',
+            'a' => 'Both are available. In-person classes are held at our office at Ruko Bizhome RL6-61, Pakuwon City, Surabaya. For students outside the city, online classes run with the same material and the same support.',
         ],
         'campus' => [
             'q' => 'Does Scolier also help with university applications and scholarships?',
