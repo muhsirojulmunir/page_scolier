@@ -10,7 +10,8 @@
 return [
 
     'meta' => [
-        'title' => 'Scolier — Japanese, Mandarin, Korean & English Courses in Surabaya',
+        'title' => 'Scolier — Where Students Become Global',
+
         'description' => 'Scolier guides you from your first language class all the way to departure: Japanese, Mandarin, Korean and English courses, the Tokutei Ginou (SSW) programme, and undergraduate or postgraduate study abroad. Ruko Bizhome, Pakuwon City, Surabaya.',
         'og_description' => 'Japanese, Mandarin, Korean & English courses. Specialists in the Tokutei Ginou (SSW) programme and study abroad. Surabaya, Indonesia.',
         'schema_description' => 'Japanese, Mandarin, Korean and English courses, the Tokutei Ginou (SSW) programme, and guidance for undergraduate and postgraduate study abroad.',
@@ -139,9 +140,12 @@ return [
                 'subtitle' => 'Certified Curriculum',
                 'desc' => 'Intensive language courses with certified tutors and exam-focused curriculum for international standards.',
                 'highlights' => [
-                    'Japanese & Korean',
-                    'Mandarin & English',
+                    'Japanese',
+                    'Korean',
+                    'Mandarin',
+                    'English',
                 ],
+
                 'wa_text' => 'Hello Scolier, I would like to consult about Foreign Language Courses (English, Japanese, Mandarin, Korean, etc).',
             ],
             'tokutei_ginou' => [

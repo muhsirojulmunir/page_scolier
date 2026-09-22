@@ -12,7 +12,8 @@
 return [
 
     'meta' => [
-        'title' => 'Scolier — Kursus Bahasa Jepun, Mandarin, Korea & Inggeris di Surabaya',
+        'title' => 'Scolier — Where Students Become Global',
+
         'description' => 'Scolier membimbing anda dari kelas bahasa sehingga hari berlepas: kursus Bahasa Jepun, Mandarin, Korea dan Inggeris, program Tokutei Ginou (SSW), serta pengajian ijazah dan sarjana di luar negara. Ruko Bizhome, Pakuwon City, Surabaya.',
         'og_description' => 'Kursus Bahasa Jepun, Mandarin, Korea & Inggeris. Pakar program Tokutei Ginou (SSW) dan pengajian di luar negara. Surabaya, Indonesia.',
         'schema_description' => 'Kursus Bahasa Jepun, Mandarin, Korea dan Inggeris, program Tokutei Ginou (SSW), serta bimbingan pengajian ijazah dan sarjana di luar negara.',
@@ -141,9 +142,12 @@ return [
                 'subtitle' => 'Foreign Language Courses',
                 'desc' => 'Latihan bahasa asing intensif bertaraf antarabangsa bersama pengajar bertauliah dan kurikulum berasaskan peperiksaan.',
                 'highlights' => [
-                    'Jepun & Korea',
-                    'Mandarin & Inggeris',
+                    'Bahasa Jepun',
+                    'Bahasa Korea',
+                    'Bahasa Mandarin',
+                    'Bahasa Inggeris',
                 ],
+
                 'wa_text' => 'Salam Scolier, saya ingin mendapatkan konsultasi mengenai Kursus Bahasa Asing.',
             ],
             'tokutei_ginou' => [

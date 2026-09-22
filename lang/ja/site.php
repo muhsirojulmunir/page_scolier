@@ -11,7 +11,8 @@
 return [
 
     'meta' => [
-        'title' => 'Scolier — スラバヤの日本語・中国語・韓国語・英語スクール',
+        'title' => 'Scolier — Where Students Become Global',
+
         'description' => 'Scolier は語学の最初の一歩から出発の日まで伴走します。日本語・中国語・韓国語・英語の講座、特定技能（SSW）プログラム、学士・修士の海外留学サポート。インドネシア・スラバヤ、Ruko Bizhome, Pakuwon City。',
         'og_description' => '日本語・中国語・韓国語・英語の講座。特定技能（SSW）と海外留学の専門スクール。インドネシア・スラバヤ。',
         'schema_description' => '日本語・中国語・韓国語・英語の講座、特定技能（SSW）プログラム、学士・修士の海外留学サポート。',
@@ -140,9 +141,12 @@ return [
                 'subtitle' => 'Foreign Language Courses',
                 'desc' => '有資格講師による英語、日本語、中国語、韓国語などの試験対策＆集中実践レッスン。',
                 'highlights' => [
-                    '日本語 & 韓国語',
-                    '中国語 & 英語',
+                    '日本語',
+                    '韓国語',
+                    '中国語',
+                    '英語',
                 ],
+
                 'wa_text' => 'スコリエ様、外国語コース（英語、日本語、中国語、韓国語等）について相談したいです。',
             ],
             'tokutei_ginou' => [
