@@ -43,7 +43,7 @@
                         {{ __('site.hero.cta_primary') }}
                     </a>
 
-                    <a href="#program" class="btn btn-ghost-light">
+                    <a href="#layanan" class="btn btn-ghost-light">
                         {{ __('site.hero.cta_secondary') }}
                         <x-icon name="arrow-right" class="h-[1.15rem] w-[1.15rem]" />
                     </a>

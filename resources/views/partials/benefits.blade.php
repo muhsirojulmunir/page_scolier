@@ -3,6 +3,9 @@
 @endphp
 
 <section id="layanan" class="section-pad bg-paper-alt relative overflow-hidden border-b border-navy-900/10">
+    {{-- Anchor alias agar tautan lama #program tetap mengarah ke section ini secara halus --}}
+    <div id="program" class="absolute -top-24 h-0 w-0" aria-hidden="true"></div>
+
     <div class="shell relative">
 
         {{-- ------- Kepala Section ------- --}}
@@ -65,6 +68,24 @@
                                     </li>
                                 @endforeach
                             </ul>
+                        @endif
+
+                        {{-- Tag Tambahan (Sertifikasi / Bidang Kerja SSW / Tingkat Studi) --}}
+                        @if (!empty($b['tags']))
+                            <div class="mt-5 border-t border-navy-900/10 pt-4">
+                                @if (!empty($b['tags_label']))
+                                    <span class="block text-[0.6875rem] font-semibold uppercase tracking-wider text-navy-900/60 mb-2">
+                                        {{ $b['tags_label'] }}
+                                    </span>
+                                @endif
+                                <div class="flex flex-wrap gap-1.5">
+                                    @foreach ($b['tags'] as $tag)
+                                        <span class="inline-flex items-center rounded-md bg-navy-900/[0.04] px-2.5 py-1 text-xs font-medium text-navy-900/80 border border-navy-900/5">
+                                            {{ $tag }}
+                                        </span>
+                                    @endforeach
+                                </div>
+                            </div>
                         @endif
                     </div>
 

@@ -5,11 +5,11 @@
 
     $footerLinks = [
         __('site.footer.group_programs') => [
-            ['label' => __('site.footer.links.ssw'),      'href' => '#program'],
-            ['label' => __('site.footer.links.japanese'), 'href' => '#program'],
-            ['label' => __('site.footer.links.mandarin'), 'href' => '#program'],
-            ['label' => __('site.footer.links.korean'),   'href' => '#program'],
-            ['label' => __('site.footer.links.english'),  'href' => '#program'],
+            ['label' => __('site.footer.links.ssw'),      'href' => '#layanan'],
+            ['label' => __('site.footer.links.japanese'), 'href' => '#layanan'],
+            ['label' => __('site.footer.links.mandarin'), 'href' => '#layanan'],
+            ['label' => __('site.footer.links.korean'),   'href' => '#layanan'],
+            ['label' => __('site.footer.links.english'),  'href' => '#layanan'],
         ],
         __('site.footer.group_company') => [
             ['label' => __('site.footer.links.about'),   'href' => '#tentang'],

@@ -25,7 +25,7 @@
                     {{ __('site.cta_section.primary') }}
                 </a>
 
-                <a href="#program" class="btn btn-ghost-light w-full sm:w-auto">
+                <a href="#layanan" class="btn btn-ghost-light w-full sm:w-auto">
                     {{ __('site.cta_section.secondary') }}
                 </a>
             </div>
