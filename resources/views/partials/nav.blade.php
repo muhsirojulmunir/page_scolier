@@ -10,7 +10,7 @@
 
 <header
     data-nav
-    class="fixed inset-x-0 top-0 z-[80] transition-[background-color,box-shadow,backdrop-filter] duration-300"
+    class="fixed inset-x-0 top-0 z-[210] transition-[background-color,box-shadow,backdrop-filter] duration-300"
 >
     <div class="shell relative z-10">
         <nav
@@ -81,50 +81,50 @@
             </div>
         </nav>
     </div>
-
-    {{-- Panel menu mobile --}}
-    <div
-        id="menu-mobile"
-        data-menu-panel
-        hidden
-        class="surface-navy grain fixed inset-0 top-0 z-[70] flex flex-col justify-between overflow-y-auto px-6 pb-10 pt-24 xl:hidden"
-    >
-        <ul class="flex flex-col gap-1">
-            @foreach ($links as $link)
-                <li data-menu-item class="border-b border-white/10">
-                    <a
-                        href="{{ $link['href'] }}"
-                        class="group flex items-center justify-between gap-4 py-5 text-white"
-                    >
-                        <span class="display-3">{{ $link['label'] }}</span>
-                        <x-icon
-                            name="arrow-right"
-                            class="h-5 w-5 text-gold-400 transition-transform duration-300 group-hover:translate-x-1"
-                        />
-                    </a>
-                </li>
-            @endforeach
-        </ul>
-
-        <div data-menu-item class="mt-10 flex flex-col gap-4">
-            {{-- Pemilih bahasa juga tersedia di menu mobile --}}
-            <div class="md:hidden">
-                <x-language-switcher align="left" />
-            </div>
-
-            <a
-                href="{{ $waUrl() }}"
-                target="_blank"
-                rel="noopener"
-                class="btn btn-primary w-full"
-            >
-                {{ __('site.nav.cta') }}
-            </a>
-
-            <p class="text-sm leading-relaxed text-white/60">
-                {{ config('scolier.contact.address_line') }}<br>
-                {{ config('scolier.contact.address_city') }}
-            </p>
-        </div>
-    </div>
 </header>
+
+{{--
+    Panel menu mobile dipindah ke LUAR <header> agar position:fixed bekerja
+    benar relatif terhadap viewport (bukan terhadap stacking context header).
+    z-[200] memastikan panel di atas semua konten halaman, namun header tetap
+    di z-[210] sehingga tombol hamburger/tutup selalu dapat diklik.
+--}}
+<div
+    id="menu-mobile"
+    data-menu-panel
+    hidden
+    class="on-dark fixed inset-0 z-[200] flex flex-col justify-between overflow-y-auto bg-navy-900 px-6 pb-10 pt-24 xl:hidden"
+>
+    <ul class="flex flex-col gap-1">
+        @foreach ($links as $link)
+            <li data-menu-item class="border-b border-white/10">
+                <a
+                    href="{{ $link['href'] }}"
+                    class="group flex items-center justify-between gap-4 py-5 text-white"
+                >
+                    <span class="display-3">{{ $link['label'] }}</span>
+                    <x-icon
+                        name="arrow-right"
+                        class="h-5 w-5 text-gold-400 transition-transform duration-300 group-hover:translate-x-1"
+                    />
+                </a>
+            </li>
+        @endforeach
+    </ul>
+
+    <div data-menu-item class="mt-10 flex flex-col gap-4">
+        {{-- Pemilih bahasa juga tersedia di menu mobile --}}
+        <div class="md:hidden">
+            <x-language-switcher align="left" />
+        </div>
+
+        <a
+            href="{{ $waUrl() }}"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary w-full"
+        >
+            {{ __('site.nav.cta') }}
+        </a>
+    </div>
+</div>
