@@ -37,8 +37,8 @@
         data-lang-panel
         hidden
         @class([
-            'absolute top-[calc(100%+0.625rem)] z-50 w-[19rem] overflow-hidden rounded-2xl border border-navy-900/10 bg-white shadow-[0_28px_60px_-24px_rgba(7,19,34,0.55)]',
-            'right-0' => $align === 'right',
+            'absolute top-[calc(100%+0.625rem)] z-50 w-[19rem] max-w-[calc(100vw-2rem)] overflow-hidden rounded-2xl border border-navy-900/10 bg-white shadow-[0_28px_60px_-24px_rgba(7,19,34,0.55)]',
+            '-right-12 sm:right-0' => $align === 'right',
             'left-0' => $align === 'left',
         ])
     >

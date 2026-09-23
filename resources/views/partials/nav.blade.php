@@ -53,9 +53,7 @@
 
             {{-- Aksi --}}
             <div class="flex items-center gap-2">
-                <div class="hidden md:block">
-                    <x-language-switcher />
-                </div>
+                <x-language-switcher />
 
                 <a
                     href="{{ $waUrl() }}"
@@ -113,11 +111,6 @@
     </ul>
 
     <div data-menu-item class="mt-10 flex flex-col gap-4">
-        {{-- Pemilih bahasa juga tersedia di menu mobile --}}
-        <div class="md:hidden">
-            <x-language-switcher align="left" />
-        </div>
-
         <a
             href="{{ $waUrl() }}"
             target="_blank"
