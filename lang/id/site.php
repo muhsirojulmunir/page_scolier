@@ -63,7 +63,7 @@ return [
         'title_1' => '"Where Students',
         'title_2' => '',
         'title_accent' => 'Become Global"',
-        'lede' => 'Scolier menyiapkanmu dari nol — kursus Bahasa Jepang, Mandarin, Korea, dan Inggris, program :ssw, hingga pendaftaran S1/S2 di kampus luar negeri.',
+        'lede' => 'Scolier menyiapkanmu dari nol — pendampingan studi S1/S2 di kampus luar negeri, program karir resmi :ssw, hingga persiapan bahasa asing.',
         'cta_primary' => 'Konsultasi Gratis',
         'cta_secondary' => 'Lihat Program',
         'assurances' => [

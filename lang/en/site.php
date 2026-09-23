@@ -62,7 +62,7 @@ return [
         'title_1' => '"Where Students',
         'title_2' => '',
         'title_accent' => 'Become Global"',
-        'lede' => 'Scolier prepares you from scratch — Japanese, Mandarin, Korean and English courses, the :ssw programme, and applications to universities abroad.',
+        'lede' => 'Scolier prepares you from scratch — study abroad guidance for universities overseas, official career :ssw programmes, and foreign language preparation.',
         'cta_primary' => 'Free Consultation',
         'cta_secondary' => 'View Programmes',
         'assurances' => [
