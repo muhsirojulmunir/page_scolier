@@ -12,14 +12,14 @@ return [
     'meta' => [
         'title' => 'Scolier — Study Abroad',
 
-        'description' => 'Scolier guides you from your first language class all the way to departure: Japanese, Mandarin, Korean and English courses, the Tokutei Ginou (SSW) programme, and undergraduate or postgraduate study abroad. Ruko Bizhome RL6-61, Pakuwon City, Surabaya.',
-        'og_description' => 'Japanese, Mandarin, Korean & English courses. Specialists in the Tokutei Ginou (SSW) programme and study abroad. Surabaya, Indonesia.',
-        'schema_description' => 'Japanese, Mandarin, Korean and English courses, the Tokutei Ginou (SSW) programme, and guidance for undergraduate and postgraduate study abroad.',
+        'description' => 'Study Abroad & Global Career Consultant in Surabaya. Comprehensive guidance for undergraduate and postgraduate study abroad, Tokutei Ginou (SSW) programme, and foreign language preparation (Japanese, Korean, Mandarin, English). Ruko Bizhome RL6-61, Pakuwon City, Surabaya.',
+        'og_description' => 'Study Abroad & Global Career Consultant. Guidance for undergraduate/postgraduate study abroad, Tokutei Ginou (SSW), and language training. Surabaya, Indonesia.',
+        'schema_description' => 'Study Abroad Consultant, undergraduate and postgraduate university guidance, Tokutei Ginou (SSW) programme, and foreign language preparation in Surabaya.',
     ],
 
     'brand' => [
         'tagline' => 'Where Students Become Global',
-        'descriptor' => 'Education Consultant · Foreign Language Courses',
+        'descriptor' => 'Education Consultant · Study Abroad',
     ],
 
     'a11y' => [
@@ -468,7 +468,7 @@ return [
     ],
 
     'footer' => [
-        'about' => 'Overseas education consultancy, foreign language training (Japanese, Mandarin, Korean, English), and official career placement in Japan (Tokutei Ginou) in Surabaya.',
+        'about' => 'Study abroad and global career consultancy in Surabaya. Guidance for undergraduate/postgraduate degrees, Tokutei Ginou (SSW) programme, and foreign language preparation — until you depart.',
         'group_programs' => 'Programmes',
         'group_company' => 'Company',
         'group_visit' => 'Visit',

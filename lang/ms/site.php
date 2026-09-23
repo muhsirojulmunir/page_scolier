@@ -14,14 +14,14 @@ return [
     'meta' => [
         'title' => 'Scolier — Pengajian Luar Negara',
 
-        'description' => 'Scolier membimbing anda dari kelas bahasa sehingga hari berlepas: kursus Bahasa Jepun, Mandarin, Korea dan Inggeris, program Tokutei Ginou (SSW), serta pengajian ijazah dan sarjana di luar negara. Ruko Bizhome RL6-61, Pakuwon City, Surabaya.',
-        'og_description' => 'Kursus Bahasa Jepun, Mandarin, Korea & Inggeris. Pakar program Tokutei Ginou (SSW) dan pengajian di luar negara. Surabaya, Indonesia.',
-        'schema_description' => 'Kursus Bahasa Jepun, Mandarin, Korea dan Inggeris, program Tokutei Ginou (SSW), serta bimbingan pengajian ijazah dan sarjana di luar negara.',
+        'description' => 'Perunding Pengajian Luar Negara & Kerjaya Global di Surabaya. Bimbingan pengajian ijazah dan sarjana ke luar negara, program Tokutei Ginou (SSW), serta persediaan bahasa asing (Jepun, Korea, Mandarin, Inggeris). Ruko Bizhome RL6-61, Pakuwon City, Surabaya.',
+        'og_description' => 'Perunding Pengajian Luar Negara & Kerjaya Global. Bimbingan ijazah/sarjana, Tokutei Ginou (SSW), dan latihan bahasa asing. Surabaya, Indonesia.',
+        'schema_description' => 'Perunding Pengajian Luar Negara, bimbingan pengajian ijazah dan sarjana, program Tokutei Ginou (SSW), serta persediaan bahasa asing di Surabaya.',
     ],
 
     'brand' => [
         'tagline' => 'Where Students Become Global',
-        'descriptor' => 'Perunding Pendidikan · Kursus Bahasa Asing',
+        'descriptor' => 'Perunding Pendidikan · Pengajian Luar Negara',
     ],
 
     'a11y' => [
@@ -470,7 +470,7 @@ return [
     ],
 
     'footer' => [
-        'about' => 'Perunding pendidikan luar negara, kursus bahasa asing (Jepun, Mandarin, Korea, Inggeris), dan bimbingan kerjaya rasmi di Jepun (Tokutei Ginou) di Surabaya.',
+        'about' => 'Perunding pengajian luar negara dan kerjaya global di Surabaya. Bimbingan pengajian ijazah/sarjana, program Tokutei Ginou (SSW), serta persediaan bahasa asing — sehingga anda benar-benar berlepas.',
         'group_programs' => 'Program',
         'group_company' => 'Syarikat',
         'group_visit' => 'Kunjungi',

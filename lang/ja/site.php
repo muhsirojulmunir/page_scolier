@@ -13,14 +13,14 @@ return [
     'meta' => [
         'title' => 'Scolier — 海外留学',
 
-        'description' => 'Scolier は語学の最初の一歩から出発の日まで伴走します。日本語・中国語・韓国語・英語の講座、特定技能（SSW）プログラム、学士・修士の海外留学サポート。インドネシア・スラバヤ、Ruko Bizhome RL6-61, Pakuwon City。',
-        'og_description' => '日本語・中国語・韓国語・英語の講座。特定技能（SSW）と海外留学の専門スクール。インドネシア・スラバヤ。',
-        'schema_description' => '日本語・中国語・韓国語・英語の講座、特定技能（SSW）プログラム、学士・修士の海外留学サポート。',
+        'description' => 'スラバヤの海外留学・グローバルキャリア支援コンサルティング。海外大学（学部・大学院）進学、特定技能（SSW）プログラム、外国語研修（日本語・韓国語・中国語・英語）をトータルサポート。Ruko Bizhome RL6-61, Pakuwon City, Surabaya。',
+        'og_description' => '海外留学・グローバルキャリア支援コンサルティング。海外大学進学、特定技能（SSW）、外国語研修。インドネシア・スラバヤ。',
+        'schema_description' => '海外留学コンサルティング、大学・大学院進学指導、特定技能（SSW）プログラム、外国語研修（スラバヤ）。',
     ],
 
     'brand' => [
         'tagline' => 'Where Students Become Global',
-        'descriptor' => '教育コンサルティング · 外国語スクール',
+        'descriptor' => '教育コンサルティング · 海外留学',
     ],
 
     'a11y' => [

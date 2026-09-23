@@ -7,14 +7,14 @@ return [
     'meta' => [
         'title' => 'Scolier — 海外留学',
 
-        'description' => 'Scolier 全程陪伴您的国际求学与发展之路：提供日语、中文、韩语及英语外语培训、日本特定技能（SSW）工作签证项目，以及海外本科与硕士留学申请服务。位于泗水 Pakuwon City Ruko Bizhome RL6-61。',
-        'og_description' => '专业日语、中文、韩语与英语外语培训。专注日本特定技能（SSW）就劳与海外本科、硕士留学申请。印尼泗水。',
-        'schema_description' => '专业日语、中文、韩语、英语外语培训课程，日本特定技能（SSW）项目，以及海外本硕升学指导与签证办理。',
+        'description' => '泗水海外留学与全球发展咨询机构。提供海外本科与硕士留学申请、日本特定技能（SSW）工作签证项目，以及外语强化培训（日语、韩语、中文、英语）。位于泗水 Pakuwon City Ruko Bizhome RL6-61。',
+        'og_description' => '海外留学与全球发展咨询。海外本硕升学、日本特定技能（SSW）就劳与外语培训。印尼泗水。',
+        'schema_description' => '海外留学升学咨询机构，海外本科与硕士申请指导，日本特定技能（SSW）项目与外语培训。',
     ],
 
     'brand' => [
         'tagline' => 'Where Students Become Global',
-        'descriptor' => '教育升学咨询 · 国际外语培训机构',
+        'descriptor' => '教育升学咨询 · 海外留学',
     ],
 
     'a11y' => [

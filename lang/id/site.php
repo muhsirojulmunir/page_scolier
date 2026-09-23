@@ -13,14 +13,14 @@ return [
     'meta' => [
         'title' => 'Scolier — Studi Luar Negeri',
 
-        'description' => 'Scolier mendampingi kamu dari kelas bahasa sampai keberangkatan: kursus Bahasa Jepang, Mandarin, Korea, dan Inggris, program Tokutei Ginou (SSW), serta studi S1/S2 di luar negeri. Ruko Bizhome RL6-61, Pakuwon City, Surabaya.',
-        'og_description' => 'Kursus Bahasa Jepang, Mandarin, Korea & Inggris. Spesialis program Tokutei Ginou (SSW) dan studi S1/S2 luar negeri. Surabaya.',
-        'schema_description' => 'Kursus Bahasa Jepang, Mandarin, Korea, dan Inggris, program Tokutei Ginou (SSW), serta pendampingan studi S1/S2 di luar negeri.',
+        'description' => 'Konsultan Studi Luar Negeri & Persiapan Karir Global di Surabaya. Pendampingan kuliah S1/S2 luar negeri, program Tokutei Ginou (SSW), serta persiapan bahasa asing (Jepang, Korea, Mandarin, Inggris). Ruko Bizhome RL6-61, Pakuwon City, Surabaya.',
+        'og_description' => 'Konsultan Studi Luar Negeri & Karir Global. Pendampingan kuliah S1/S2 luar negeri, Tokutei Ginou (SSW), dan pelatihan bahasa asing. Surabaya.',
+        'schema_description' => 'Konsultan Studi Luar Negeri, pendampingan kuliah S1/S2 luar negeri, program kerja resmi Tokutei Ginou (SSW), serta pelatihan bahasa asing di Surabaya.',
     ],
 
     'brand' => [
         'tagline' => 'Where Students Become Global',
-        'descriptor' => 'Konsultan Pendidikan · Kursus Bahasa Asing',
+        'descriptor' => 'Konsultan Pendidikan · Studi Luar Negeri',
     ],
 
     'a11y' => [
@@ -469,7 +469,7 @@ return [
     ],
 
     'footer' => [
-        'about' => 'Konsultan pendidikan luar negeri, kursus bahasa asing (Jepang, Mandarin, Korea, Inggris), dan pendampingan kerja resmi di Jepang (Tokutei Ginou) di Surabaya.',
+        'about' => 'Konsultan studi luar negeri dan persiapan karir global di Surabaya. Pendampingan kuliah S1/S2, program Tokutei Ginou (SSW), serta pelatihan bahasa asing — sampai kamu benar-benar berangkat.',
         'group_programs' => 'Program',
         'group_company' => 'Perusahaan',
         'group_visit' => 'Kunjungi',
