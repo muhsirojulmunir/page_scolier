@@ -21,9 +21,43 @@ Route::get('/clear-cache', function () {
         if (is_dir(public_path('img'))) {
             \App\Providers\AppServiceProvider::copyDirectory(public_path('img'), $publicHtml . '/img');
         }
+        if (file_exists(public_path('robots.txt'))) {
+            @copy(public_path('robots.txt'), $publicHtml . '/robots.txt');
+        }
+        if (file_exists(public_path('sitemap.xml'))) {
+            @copy(public_path('sitemap.xml'), $publicHtml . '/sitemap.xml');
+        }
     }
 
     return '<h3>✅ Cache Laravel dibersihkan & aset disinkronkan ke public_html! Silakan kembali ke <a href="/">Halaman Utama</a></h3>';
+});
+
+Route::get('/robots.txt', function () {
+    $path = public_path('robots.txt');
+    if (! file_exists($path)) {
+        abort(404);
+    }
+
+    $publicHtml = base_path('../public_html');
+    if (is_dir($publicHtml)) {
+        @copy($path, $publicHtml . '/robots.txt');
+    }
+
+    return response(file_get_contents($path), 200, ['Content-Type' => 'text/plain']);
+});
+
+Route::get('/sitemap.xml', function () {
+    $path = public_path('sitemap.xml');
+    if (! file_exists($path)) {
+        abort(404);
+    }
+
+    $publicHtml = base_path('../public_html');
+    if (is_dir($publicHtml)) {
+        @copy($path, $publicHtml . '/sitemap.xml');
+    }
+
+    return response(file_get_contents($path), 200, ['Content-Type' => 'application/xml']);
 });
 
 // Fallback jika web server mengarahkan request gambar statis ke Laravel
