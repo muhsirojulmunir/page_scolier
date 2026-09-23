@@ -5,7 +5,6 @@
     @include('partials.marquee')
     @include('partials.about')
     @include('partials.benefits')
-    @include('partials.process')
     @include('partials.journey')
     @include('partials.testimonials')
     @include('partials.faq')

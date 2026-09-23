@@ -2,7 +2,6 @@
     $links = [
         ['href' => '#tentang',     'label' => __('site.nav.about')],
         ['href' => '#layanan',     'label' => __('site.nav.services')],
-        ['href' => '#alur',        'label' => __('site.nav.process')],
         ['href' => '#perjalanan',  'label' => __('site.nav.journey')],
         ['href' => '#faq',         'label' => __('site.nav.faq')],
         ['href' => '#kontak',      'label' => __('site.nav.contact')],
@@ -88,7 +87,7 @@
         id="menu-mobile"
         data-menu-panel
         hidden
-        class="surface-navy grain fixed inset-0 top-0 z-[-1] flex flex-col justify-between overflow-y-auto px-6 pb-10 pt-24 xl:hidden"
+        class="surface-navy grain fixed inset-0 top-0 z-[70] flex flex-col justify-between overflow-y-auto px-6 pb-10 pt-24 xl:hidden"
     >
         <ul class="flex flex-col gap-1">
             @foreach ($links as $link)
